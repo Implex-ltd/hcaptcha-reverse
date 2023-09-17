@@ -1,0 +1,14 @@
+{
+	"typ": "JWT",
+	"alg": "RS256"
+}
+{
+	"f": 0,
+	"s": 2,
+	"t": "w",
+	"d": "hLJIY89FeEMXUAC72R4r1IIMQfOO7H3xuoumoFwNgyGpyoGW1Ph7DUnuseBxtGePjctRGQ2+f6l9M7vsexcFq3yXgErxcYyEPqpop2+V7Ki9US7r3TNdCIOGAJs1zLiMJxOHMU3ZZCk6fk4DsKHmiRv7jpQIlZwAt9MFyWK9rg+pHXQlWBQqGN6+Cw==+ysAmkiU2uRA4NVZ",
+	"l": "https://newassets.hcaptcha.com/c/6f48ffb",
+	"e": 1693314053,
+	"n": "hsw",
+	"c": 1000
+}

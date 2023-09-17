@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hcaptcha</title>
+    <script>
+        console.clear();
+
+        async function run_hsw() {
+            const startTime = performance.now();
+            const output = await hsw("eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJmIjowLCJzIjoyLCJ0IjoidyIsImQiOiIxaWFVK2JlZm5TMEh1Y0p4YWNxSDhxU0tBZm9hNlN5bjhuTm9UVEtybjlPZE5OdTNockUyMCtDcnhIYW1TVEQ4YW9yQk9kSFNkazVEMW4vbkxBYlNqb2V3dU9JZ214WDF5b2V2dDZRMW96UlNUYmk2KzZxT1NsYUJpaml2Ynl4ZkZqbkJsQmFYUC91MWlpeWU0VHBFa2JDUjVMMmZtRURYYnk3d3JTbUJFeUx2bzlwOHdGckhPK3EyTmc9PXRGV0phYlliUTg0UUt1QTQiLCJsIjoiaHR0cHM6Ly9uZXdhc3NldHMuaGNhcHRjaGEuY29tL2MvMzE4OTJmYiIsImUiOjE2OTQ5NTk5MDUsIm4iOiJoc3ciLCJjIjoxMDAwfQ.GJaR3H0UBOfqDQbDgq50l1jDio29lS8yyEls3FaagWWQtH5UnC6z3nmaNRrgntrawo3xEDSljCy1ibspuq6bm2qnVZ7hIchu9Q3GGPPNjfNdbR6t44ZfIpjRHhX6Uy5ZGCPo7WMLzHh0XK43VsSpeY2zNMWZp71-QjFzPVvAw5k");
+            const endTime = performance.now();
+
+            let data = `[🤖] Output (took ${(endTime - startTime).toFixed(2)} ms, chars: ${output.length}): ${output}`
+
+            console.log(data);
+            document.getElementById('resultat').textContent = data;
+        }
+    </script>
+    <script src="../deobfuscator/hsw.js"></script>
+</head>
+
+<body>
+    <button onclick="run_hsw()">click-here</button>
+    <div id="resultat"></div>
+</body>
+
+</html>
