@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <title>hello-wasm example</title>
+</head>
+
+<body>
+    <script type="module">
+        import init, { encode_data } from './pkg/wasm_json_encode.js';
+
+        init().then(() => {
+            console.log(encode_data())
+        })
+    </script>
+</body>
+
+</html>

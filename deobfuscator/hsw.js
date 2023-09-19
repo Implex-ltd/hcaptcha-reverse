@@ -7304,7 +7304,7 @@ var hsw = function () {
         return C.original = Q, C
     }*/
 
-    let record_fp = {}
+    let record_fp = []
 
     function DI(A, g, I, B) {
         var Q = {
@@ -7323,7 +7323,10 @@ var hsw = function () {
                         fp_id: args[0],
                         fp_value: args[1]
                     }
-                    
+                    record_fp.push(fp)
+                    console.log(record_fp)
+
+
                     if (dump[fp.fp_id] !== undefined) {
                         args[1] = dump[fp.fp_id]
                     }

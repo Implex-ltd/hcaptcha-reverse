@@ -16,7 +16,8 @@ const {window} = new JSDOM(``, {
 window.eval(fs.readFileSync(__dirname + "/assets/clean_hsw.js", "utf-8"))
 
 async function eval_hsw(jwt) {
-    window.hsw(jwt).then(function (result) {
+    await window.hsj(jwt).then(function (result) {
+        console.log(result)
         return {
             token: result,
             size: result.length
@@ -25,5 +26,6 @@ async function eval_hsw(jwt) {
 }
 
 (async () => {
-    console.log(eval_hsw("eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJmIjowLCJzIjoyLCJ0IjoidyIsImQiOiJUZllCanIrVE1tMUs2WENNcDgwM09BbTRvaGh2OWNqNWErQmF4UjZ5NWd6WHFzQi9pN1FtZHdZWkcvek9kNXY5Nm5oVll5RmFzamRjcUUxSnBSQm94NmN5YnVuLzRuQUVDT3UrcmVyK21LdVdRR0VIdlJHNlNUeG84UTVPZG04cnFWVXdDbnVOZ0c4ZExKcWFObGtlOVhTdEZRVGo1YWhocXZ1R0I5R2JpRjd0akVZRDNNWGNjVzRMcnc9PXFwemIxckIxZ1JUMlBzbUoiLCJsIjoiaHR0cHM6Ly9uZXdhc3NldHMuaGNhcHRjaGEuY29tL2MvMzE4OTJmYiIsImUiOjE2OTQ3NjE1MDYsIm4iOiJoc3ciLCJjIjoxMDAwfQ.rXelXmavm3mI_sYAD9g7PbuGZ0JGQEB3ZiXUK-ZlVI_966XQDNYfczXG4gcWDdY5y7xLRwxfvUICMiPe7uVas3bULkspBzrezd5nJdKmt0jSHQGBEBXSZPDWMBpZkz8JTAfELuw5yoOIfr5X7si4ZbOeilc7Ex5YkjXizz9boUY"))
+    let result = await eval_hsw("eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJmIjowLCJzIjoyLCJ0IjoidyIsImQiOiJUZllCanIrVE1tMUs2WENNcDgwM09BbTRvaGh2OWNqNWErQmF4UjZ5NWd6WHFzQi9pN1FtZHdZWkcvek9kNXY5Nm5oVll5RmFzamRjcUUxSnBSQm94NmN5YnVuLzRuQUVDT3UrcmVyK21LdVdRR0VIdlJHNlNUeG84UTVPZG04cnFWVXdDbnVOZ0c4ZExKcWFObGtlOVhTdEZRVGo1YWhocXZ1R0I5R2JpRjd0akVZRDNNWGNjVzRMcnc9PXFwemIxckIxZ1JUMlBzbUoiLCJsIjoiaHR0cHM6Ly9uZXdhc3NldHMuaGNhcHRjaGEuY29tL2MvMzE4OTJmYiIsImUiOjE2OTQ3NjE1MDYsIm4iOiJoc3ciLCJjIjoxMDAwfQ.rXelXmavm3mI_sYAD9g7PbuGZ0JGQEB3ZiXUK-ZlVI_966XQDNYfczXG4gcWDdY5y7xLRwxfvUICMiPe7uVas3bULkspBzrezd5nJdKmt0jSHQGBEBXSZPDWMBpZkz8JTAfELuw5yoOIfr5X7si4ZbOeilc7Ex5YkjXizz9boUY") 
+    console.log(result)
 })()
