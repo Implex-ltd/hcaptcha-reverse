@@ -1,7 +1,7 @@
-const {JSDOM, ResourceLoader} = require("jsdom");
+const { JSDOM, ResourceLoader } = require("jsdom");
 const fs = require('fs')
 
-const {window} = new JSDOM(``, {
+const { window } = new JSDOM(``, {
     url: "https://discord.com",
     referrer: "https://discord.com",
     contentType: "text/html",
@@ -15,17 +15,32 @@ const {window} = new JSDOM(``, {
 
 window.eval(fs.readFileSync(__dirname + "/assets/clean_hsw.js", "utf-8"))
 
+
+/*
+window.setInterval(() => {
+    try {
+        console.log(window.pg)
+
+        const uint8Array = new Uint8Array(window.pg);
+
+        const decodedString = new TextDecoder('utf-8').decode(uint8Array);
+
+        let d1 = `{"proof_spec"`
+        let d2 = `]]}`
+
+        let n = `${d1}${decodedString.split(d1)[1].split(d2)[0]}${d2}`
+
+        console.log(n);
+    } catch (err) { console.log(err) }
+}, 1);
+*/
+
 async function eval_hsw(jwt) {
-    await window.hsj(jwt).then(function (result) {
-        console.log(result)
-        return {
-            token: result,
-            size: result.length
-        }
+    await window.hsw(jwt).then(function (result) {
+        console.log(result, result.length)
     })
 }
 
 (async () => {
-    let result = await eval_hsw("eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJmIjowLCJzIjoyLCJ0IjoidyIsImQiOiJUZllCanIrVE1tMUs2WENNcDgwM09BbTRvaGh2OWNqNWErQmF4UjZ5NWd6WHFzQi9pN1FtZHdZWkcvek9kNXY5Nm5oVll5RmFzamRjcUUxSnBSQm94NmN5YnVuLzRuQUVDT3UrcmVyK21LdVdRR0VIdlJHNlNUeG84UTVPZG04cnFWVXdDbnVOZ0c4ZExKcWFObGtlOVhTdEZRVGo1YWhocXZ1R0I5R2JpRjd0akVZRDNNWGNjVzRMcnc9PXFwemIxckIxZ1JUMlBzbUoiLCJsIjoiaHR0cHM6Ly9uZXdhc3NldHMuaGNhcHRjaGEuY29tL2MvMzE4OTJmYiIsImUiOjE2OTQ3NjE1MDYsIm4iOiJoc3ciLCJjIjoxMDAwfQ.rXelXmavm3mI_sYAD9g7PbuGZ0JGQEB3ZiXUK-ZlVI_966XQDNYfczXG4gcWDdY5y7xLRwxfvUICMiPe7uVas3bULkspBzrezd5nJdKmt0jSHQGBEBXSZPDWMBpZkz8JTAfELuw5yoOIfr5X7si4ZbOeilc7Ex5YkjXizz9boUY") 
-    console.log(result)
+    let result = await eval_hsw("eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJmIjowLCJzIjoyLCJ0IjoidyIsImQiOiJLOE94d0NsNFY4Zm5Gbk43QmY4MVJDRmNMaTRjMFFPNisyRVdWWEtFVkVXS2MyaTRwblJOOGUxYTNNZ2pmd0V0WlBiUWEyMm5Fd0VxZWc1Zjd5dzR2L05MbUlOaGlwaUNhMjc1d2wvYlVxNndvZmlRWHM3SDc2Sld0ek1GTGllZXhlcHlNd09UdzRWSkJyUlVUSjAvZC9hMkdDV2RNWHJmN2FSQjJJYzV1V3B0Qm9rcTRsSlR1OHg3blE9PW5BdVdBTlZ3RTFPUU9FNGciLCJsIjoiaHR0cHM6Ly9uZXdhc3NldHMuaGNhcHRjaGEuY29tL2MvYmY2MDBiZCIsImkiOiJzaGEyNTYtTmxDelZxSlVqYnFaWUxoYXRJKzZUVStDVzBOb3BUbVh6bGdmL21oMjk1Zz0iLCJlIjoxNjk1NDk0Nzk3LCJuIjoiaHN3IiwiYyI6MTAwMH0.rFAiBCuPPQ_lTsRCPhQUlDL7qbe_lAMZ8POJPJKIzAmiAbXczKlIUh7z5y43OdysTfH1odwrWGZUpVQK30_3yrphiTcHJGVxlb7fZEdJUJwXNBVKBjAZ6OoKh10rHUpquNLzQWkFNc5fQ7-pwkTPwx3qsaVh0pH3JTiysKZKEVY")
 })()

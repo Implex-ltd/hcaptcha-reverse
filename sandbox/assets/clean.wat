@@ -1,4 +1,5 @@
 (module
+  (func $./client_bg.js.fuckthebreakpoint (;31;) (import "./client_bg.js" "fuckthebreakpoint"))
   (func $./client_bg.js.__wbindgen_object_drop_ref (;0;) (import "./client_bg.js" "__wbindgen_object_drop_ref") (param i32))
   (func $./client_bg.js.__wbindgen_json_serialize (;1;) (import "./client_bg.js" "__wbindgen_json_serialize") (param i32 i32))
   (func $./client_bg.js.__wbindgen_string_new (;2;) (import "./client_bg.js" "__wbindgen_string_new") (param i32 i32) (result i32))
@@ -6806,9 +6807,7 @@
                                 block $label96
                                   block $label82
                                     local.get $var0
-                                    ;; main
                                     block $label117 (result i32)
-                              
                                       block $label95 (result i32)
                                         block $label94
                                           block $label93 (result i32)
@@ -10523,7 +10522,7 @@
                                         end $label107
                                         local.get $var8
                                         local.get $var23
-                                        local.get $var5 ;; related to N
+                                        local.get $var5
                                         call $func611
                                         local.set $var5
                                         local.get $var2
@@ -10719,10 +10718,11 @@
                                         i32.add
                                         local.get $var2
                                         i32.load offset=1488
-                                        local.tee $var9 ;; N data buff without b64
+                                        call $./client_bg.js.fuckthebreakpoint
+                                        local.tee $var9
                                         i32.const 1056297
                                         i32.load8_u
-                                        call $func288 ;; base64 the buff ?
+                                        call $func288
                                         local.get $var2
                                         i32.load offset=16
                                         i32.eqz
@@ -10751,9 +10751,9 @@
                                           br_if $label112
                                         end $label111
                                         local.get $var5
-                                        local.get $var9 ;; N data buff without b64
+                                        local.get $var9
                                         local.get $var6
-                                        local.get $var1 ;; b64 encoded buffer
+                                        local.get $var1
                                         call $func127
                                         local.set $var3
                                         i32.const 1056297
@@ -10803,7 +10803,7 @@
                                         end
                                         local.get $var6
                                         local.get $var1
-                                        call $./client_bg.js.__wbindgen_string_new ;; b64 N
+                                        call $./client_bg.js.__wbindgen_string_new
                                         local.set $var8
                                         local.get $var1
                                         if
@@ -51654,7 +51654,7 @@
                                 local.get $var3
                                 i32.const 1052946
                                 i32.const 9
-                                call $./client_bg.js.__wbindgen_string_new ;; "webdriver"
+                                call $./client_bg.js.__wbindgen_string_new
                                 i32.store offset=88
                                 local.get $var3
                                 i32.const 56
@@ -51676,7 +51676,7 @@
                                 i32.const 48
                                 i32.add
                                 local.get $var4
-                                call $./client_bg.js.__wbindgen_json_serialize ;; ["false"]
+                                call $./client_bg.js.__wbindgen_json_serialize
                                 local.get $var3
                                 i32.const 176
                                 i32.add
