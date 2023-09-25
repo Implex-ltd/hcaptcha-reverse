@@ -1,0 +1,164 @@
+{
+    "proof_spec": {
+        "difficulty": 2,
+        "fingerprint_type": 0,
+        "_type": "w",
+        "data": "4TLOMVu6oKNToqPMqjY9KRMkrkZx2dvlvsmgLrU6lud3vbMXWn+iYk7043/jd4gEhmVdoljGk5tgxVI6UkBwQn/8xK+Y9S2uy32xOitXCREtk5/KY5kCBrJtTPwsGpBmt6HHdP58rjTqONWZ1Xb+jGmjuJUSrEzD9v3yX+vuaQX92Gct+BNT2u3pLg==o8UDn26ZJQoa6eag",
+        "_location": "https://newassets.hcaptcha.com/c/bf600bd",
+        "timeout_value": 1000.0
+    },
+    "components": null,
+    "fingerprint_events": [
+        [
+            1902,
+            "57"
+        ],
+        [
+            1901,
+            "15307345790125003576"
+        ],
+        [
+            1101,
+            "619660266666336318"
+        ],
+        [
+            1103,
+            "4932383211497360507"
+        ],
+        [
+            1105,
+            "17157476241021694346"
+        ],
+        [
+            1107,
+            "[[242,[242,242,242,255,242,242,242,255,242,242,242,255,242,242,242,255]],[[11,0,0,95.96875,15,4,96.765625],[[12,0,-1,113.125,17,4,113],[11,0,0,111,12,4,111],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[12,0,0,109.640625,14,3,110.1953125]]]]"
+        ],
+        [
+            3101,
+            "[\"0:1\",\"1:1\",\"1:1\",\"2:1\",\"3:1\",\"5:1\",\"6:1\",\"6:1\"]"
+        ],
+        [
+            211,
+            "[-6.172840118408203,-20.710678100585938,120.71067810058594,-20.710678100585938,141.42135620117188,120.71067810058594,-20.710678100585938,141.42135620117188,-20.710678100585938,-20.710678100585938,0,0,300,150,false,[0,15,33,34,35,37,39,75]]"
+        ],
+        [
+            3401,
+            "4226317358175830201"
+        ],
+        [
+            3403,
+            "[[[\"https://newassets.hcaptcha.com/captcha/v1/28ff887/hcaptcha.js\",0,5]],[[\"*\",84,9]]]"
+        ],
+        [
+            604,
+            "[\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\",\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\",8,16,\"fr-FR\",[\"fr-FR\",\"fr\",\"en-US\",\"en\"],\"Win32\",null,[\"Google Chrome 117\",\"Not;A=Brand 8\",\"Chromium 117\"],false,\"Windows\",2,5,true,false,50,false,false,true,\"[object Keyboard]\",false,false]"
+        ],
+        [
+            2801,
+            "4631229088072584217"
+        ],
+        [
+            2805,
+            "[[277114314453,277114314460,277114314451,357114314456,277114314452,554228628898,57114314443,717114314371391,554228628897,277114314456,1108457257862,277114314450,554228628919,277114314460,277114314451],false]"
+        ],
+        [
+            107,
+            "[3440,1440,3440,1392,24,24,false,0,1,1619,951,true,true,true,false]"
+        ],
+        [
+            302,
+            "12818603829562976447"
+        ],
+        [
+            303,
+            "[\"Arial\",\"\\\"Segoe UI\\\"\"]"
+        ],
+        [
+            301,
+            "8383473043360077444"
+        ],
+        [
+            304,
+            "623"
+        ],
+        [
+            1401,
+            "\"Europe/Paris\""
+        ],
+        [
+            1402,
+            "[\"Europe/Paris\",-60,-60,-3203647761000,\"heure d’été d’Europe centrale\",\"fr\"]"
+        ],
+        [
+            1403,
+            "[\"D=C0D0FnCnZkmlI1y0tW\",\"2\",\"13\",\"DMJCXXYQVJAGO\"]"
+        ],
+        [
+            3500,
+            "\"TypeError: performance.getEntries is not a function\""
+        ],
+        [
+            401,
+            "10084130893706923520"
+        ],
+        [
+            402,
+            "1116"
+        ],
+        [
+            407,
+            "[[\"loadTimes\",\"csi\",\"app\"],35,34,null,false,false,true,37,true,true,true,true,true,[\"Raven\",\"_sharedLibs\",\"hsw\"],[[\"getElementsByClassName\",[]],[\"getElementById\",[]],[\"querySelector\",[]],[\"querySelectorAll\",[]]],[],true]"
+        ],
+        [
+            400,
+            "\"ReferenceError: CSS is not defined\""
+        ],
+        [
+            2401,
+            "17670611538850778206"
+        ],
+        [
+            3800,
+            "\"Error: CSP\""
+        ],
+        [
+            1300,
+            "\"Error: Blocked\""
+        ],
+        [
+            3210,
+            "[143254600089,143254600089,null,null,4294705152,true,true,true,null]"
+        ],
+        [
+            1904,
+            "[0,11411,11411]"
+        ],
+        [
+            0,
+            "621"
+        ]
+    ],
+    "messages": null,
+    "stack_data": null,
+    "fingerprint_suspicious_events": [],
+    "stamp": "1:2:2023-09-24:4TLOMVu6oKNToqPMqjY9KRMkrkZx2dvlvsmgLrU6lud3vbMXWn+iYk7043/jd4gEhmVdoljGk5tgxVI6UkBwQn/8xK+Y9S2uy32xOitXCREtk5/KY5kCBrJtTPwsGpBmt6HHdP58rjTqONWZ1Xb+jGmjuJUSrEzD9v3yX+vuaQX92Gct+BNT2u3pLg==o8UDn26ZJQoa6eag::iUsowoqd:6",
+    "errs": {
+        "list": [
+            "src/lib.rs:123:31 - inspekt-window"
+        ]
+    },
+    "perf": [
+        [
+            1,
+            0.0
+        ],
+        [
+            2,
+            642.0
+        ],
+        [
+            3,
+            0.0
+        ]
+    ]
+}

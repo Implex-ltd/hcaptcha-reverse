@@ -23013,7 +23013,7 @@ u32 w2c_main_f105(w2c_main* instance, u32 var_p0, u32 var_p1) {
   var_i1 = var_l2;
   var_i2 = 1480u;
   var_i1 += var_i2;
-  var_i2 = var_l2;
+  var_i2 = var_l2;                                               
   var_i3 = 1024u;
   var_i2 += var_i3;
   var_i3 = var_p0;
