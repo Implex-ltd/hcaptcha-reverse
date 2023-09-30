@@ -51,5 +51,4 @@ class N:
 if __name__ == "__main__":
     # N.parse_n(__n__)
     
-    # wat2wasm custom.wat -o build.wasm
     CustomWASM("../src/assets/build.wasm").run()

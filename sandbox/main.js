@@ -12,7 +12,7 @@ const jsdomContexts = [];
 
 const hswBindScript = fs.readFileSync(__dirname + "/hsw_bind.js", "utf-8");
 
-// Initialize JSDOM contexts
+
 for (let i = 0; i < NUM_CONTEXTS; i++) {
     const { window } = new JSDOM(``, {
         includeNodeLocations: false,
