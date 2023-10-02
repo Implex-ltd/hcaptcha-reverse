@@ -132,3 +132,7 @@ dist
 .idea
 target
 .backup
+*.lnk
+*.json
+*.txt
+*.bat
