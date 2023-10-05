@@ -3,8 +3,8 @@
 */
 
 (() => {
-    const del_1 = `{"proof_spec"`
-    const del_2 = `]]}`
+    const del_1 = `{"proof_spec":`
+    const del_2 = `]]}`
 
     function dump() {
         if (memories.$memory.buffer === undefined) {

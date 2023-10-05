@@ -1041,7 +1041,13 @@ var hsw = function () {
     var hA = h(549),
         YA = /[a-z]/i;
 
-    function FA(A) {
+    /*
+    Europe/Paris
+    Google Inc. (NVIDIA)
+    ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 Ti Direct3D11 vs_5_0 ps_5_0, D3D11)
+    */
+    function __EncryptStr(A) {
+        // console.log(A)
         var g = 322,
             I = 617,
             B = 619,
@@ -1118,7 +1124,7 @@ var hsw = function () {
         A(E(B), [D, (o = F, M = 450, N = h, G = JSON[N(252)](o)[N(671)](1, 11).split("-"), y = G[0], a = G[1], n = G[2], L = "".concat(a, "/")[N(450)](n, "/")[N(M)](y), c = ""[N(450)](y, "-")[N(M)](a, "-")[N(450)](n), Y = +(+new Date(L) - +new Date(c)) / 6e4, Math[N(388)](Y)), F[E(Q)](), [1879, 1921, 1952, 1976, 2018].reduce((function (A, g) {
             var I = E;
             return A + Number(new Date(I(577)[I(C)](g)))
-        }), 0), (i = String(new Date), (null === (w = /\((.+)\)/[h(516)](i)) || void 0 === w ? void 0 : w[1]) || ""), sA()]), D && A(E(682), FA(D))
+        }), 0), (i = String(new Date), (null === (w = /\((.+)\)/[h(516)](i)) || void 0 === w ? void 0 : w[1]) || ""), sA()]), D && A(E(682), __EncryptStr(D))
     })),
         tA = [h(599), h(277), h(685), h(212), h(245), h(259)],
         rA = z(h(527), (function (A) {
@@ -1284,7 +1290,7 @@ var hsw = function () {
             N = SA(M(771)) || [],
             G = N[0],
             y = N[1];
-        G && (a = G[0]) && (A(M(774), a), A(M(221), a[M(g)](FA)));
+        G && (a = G[0]) && (A(M(774), a), A(M(221), a[M(g)](__EncryptStr)));
         var a, n = SA(M(I)) || [],
             L = n[0],
             c = n[1];
@@ -1760,7 +1766,7 @@ var hsw = function () {
                             }))
                         })), Ig()])];
                     case 1:
-                        return g = Y[H(689)](), I = g[0], B = g[1], Q = g[2], C = g[3], E = navigator.connection, D = [I, B, Q, C, "performance" in window && "memory" in window[H(y)] ? performance[H(a)].jsHeapSizeLimit : null, H(n) in window, "PushManager" in window, H(L) in window, (null == E ? void 0 : E[H(655)]) || null], A(H(746), D), (i = B || I) && A(H(c), FA(i)), [2]
+                        return g = Y[H(689)](), I = g[0], B = g[1], Q = g[2], C = g[3], E = navigator.connection, D = [I, B, Q, C, "performance" in window && "memory" in window[H(y)] ? performance[H(a)].jsHeapSizeLimit : null, H(n) in window, "PushManager" in window, H(L) in window, (null == E ? void 0 : E[H(655)]) || null], A(H(746), D), (i = B || I) && A(H(c), __EncryptStr(i)), [2]
                 }
             }))
         }))
@@ -2001,7 +2007,7 @@ var hsw = function () {
                 }))
             }))
         })),
-        ag = ["#FF6633", h(279), "#FF33FF", h(711), h(404), h(556), h(872), h(587), h(284), h(715), "#80B300", "#809900", h(228), h(712), h(471), "#FF99E6", h(390), "#FF1A66", h(447), h(197), h(548), h(188), "#4D8000", h(376), h(845), h(626), h(778), h(387), h(709), h(518), h(183), h(417), h(836), h(199), h(517), "#4D8066", "#809980", h(702), h(672), h(651), h(328), "#CCCC00", h(455), h(648), h(216), h(752), h(862), h(424), h(254), h(383)];
+        ag = ["#FF6633"];
 
     function ng(A, g, I, B) {
         var Q = (A - 1) / g * (I || 1) || 0;
@@ -2406,21 +2412,6 @@ var hsw = function () {
             }))
         }))
     }
-    var Ug = z(h(864), (function (A, g, I) {
-        var B = 550;
-        return Y(void 0, void 0, void 0, (function () {
-            var g;
-            return F(this, (function (Q) {
-                var C = k;
-                switch (Q[C(304)]) {
-                    case 0:
-                        return [4, Sg(I)];
-                    case 1:
-                        return (g = Q[C(689)]()) ? (A(C(B), g), [2]) : [2]
-                }
-            }))
-        }))
-    }));
 
     function zg(A) {
         var g, I, B, Q, C, E, D, i;
@@ -2494,7 +2485,7 @@ var hsw = function () {
                 }))
             }))
         })),
-        vg = ((fg = {})[0] = [gA, wA, Eg, Qg, Bg, rA, b, gg, _, wg, bA, MA, NA, VA, GA, nA, JA, Mg, TA, zA], fg[1] = [Gg, yg, Yg, tg, rg, Rg, Ug, qg, ug, hg, Fg, sg, Jg, Hg, eg], fg);
+        vg = ((fg = {})[0] = [], fg[1] = [], fg);
 
     function Zg(A, g) {
         var I;
@@ -2716,32 +2707,18 @@ var hsw = function () {
     }
 
     function appendJsonToMemory(pp) {
-
-        // Convert the JSON string to inject to a Uint8Array
         const to_inject = new TextEncoder().encode(pp);
-
-        // Get a reference to the memory buffer
         const buffer = M.memory.buffer;
 
-        // Get the current size of the memory buffer
         const currentSize = buffer.byteLength;
-
-        // Calculate the required size after appending to_inject
         const requiredSize = currentSize + to_inject.length;
 
-        // Grow the memory buffer to the required size
         M.memory.grow(Math.ceil((requiredSize - currentSize) / 65536));
 
-        // Get a new reference to the memory buffer (since it may have been reallocated)
         const updatedBuffer = M.memory.buffer;
-
-        // Create a Uint8Array view of the memory buffer
         const memoryView = new Uint8Array(updatedBuffer);
 
-        // Copy the bytes of to_inject to the end of the memory buffer
         memoryView.set(to_inject, currentSize);
-
-        //console.log('Appended JSON:', to_inject);
 
         return {
             ptr: currentSize,
@@ -2751,304 +2728,904 @@ var hsw = function () {
 
     let jlen = 0
     let jptr = 0
+    let fp_json_curr = {}
+
+    let fp_eventssss = [
+        [
+            3,
+            "2457.7999999970198"
+        ],
+        [
+            1902,
+            "57"
+        ],
+        [
+            1901,
+            "15307345790125003576"
+        ],
+        [
+            1101,
+            "6660561149142767717"
+        ],
+        [
+            1103,
+            "4932383211497360507"
+        ],
+        [
+            1105,
+            "17157476241021694346"
+        ],
+        [
+            1107,
+            "[[132,[132,132,132,255,132,132,132,255,132,132,132,255,132,132,132,255]],[[11,0,0,95.96875,15,4,96.765625],[[12,0,-1,113.125,17,4,113],[11,0,0,111,12,4,111],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[12,0,0,109.640625,14,3,110.1953125]]]]"
+        ],
+        [
+            201,
+            "13122422878918113034"
+        ],
+        [
+            211,
+            "[-6.172840118408203,-20.710678100585938,120.71067810058594,-20.710678100585938,141.42135620117188,120.71067810058594,-20.710678100585938,141.42135620117188,-20.710678100585938,-20.710678100585938,0,0,300,150,false,[0,15,33,34,35,37,39,75]]"
+        ],
+        [
+            3401,
+            "4226317358175830201"
+        ],
+        [
+            3403,
+            "[[[\"https://newassets.hcaptcha.com/captcha/v1/0c844f3/hcaptcha.js\",0,5]],[[\"*\",84,9]]]"
+        ],
+        [
+            803,
+            "[1,4,5,7,9,12,20,21,24,25,29]"
+        ],
+        [
+            604,
+            "[\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\",\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\",8,8,\"fr-FR\",[\"fr-FR\",\"fr\",\"en-US\",\"en\"],\"Win32\",null,[\"Google Chrome 117\",\"Not;A=Brand 8\",\"Chromium 117\"],false,\"Windows\",2,5,true,false,0,false,false,true,\"[object Keyboard]\",false,false]"
+        ],
+        [
+            2801,
+            "4631229088072584217"
+        ],
+        [
+            2805,
+            "[[277114314453,277114314460,277114314451,357114314456,277114314452,554228628898,57114314443,717114314371391,554228628897,277114314456,1108457257862,277114314450,554228628919,277114314460,277114314451],false]"
+        ],
+        [
+            107,
+            "[1920,1200,1920,1200,24,24,false,0,1,1936,1208,true,true,true,false]"
+        ],
+        [
+            302,
+            "12818603829562976447"
+        ],
+        [
+            303,
+            "[\"Arial\",\"\\\"Segoe UI\\\"\"]"
+        ],
+        [
+            301,
+            "8383473043360077444"
+        ],
+        [
+            304,
+            "623"
+        ],
+        [
+            1401,
+            "\"Europe/Paris\""
+        ],
+        [
+            1402,
+            "[\"Europe/Paris\",-60,-60,-3203647761000,\"heure d’été d’Europe centrale\",\"fr\"]"
+        ],
+        [
+            1403,
+            JSON.stringify(__EncryptStr("Europe/Paris"))
+            //"[\"w0dUv2B=EuCUtgBhzKMl\",\"16\",\"d\",\"BXKZIGVKUBQCV\"]"
+        ],
+        [
+            3504,
+            (Date.now() / 1000).toString()
+        ],
+        [
+            3501,
+            "[[\"navigation:newassets.hcaptcha.com\",0.10000000149011612,0.8999999985098839],[\"script:newassets.hcaptcha.com\",0.20000000298023224,3.2000000029802322],[\"xmlhttprequest:hcaptcha.com\",0,29.899999998509884]]"
+        ],
+        [
+            3503,
+            "0.15000000223517418"
+        ],
+        [
+            3502,
+            "3.2000000029802322"
+        ],
+        [
+            3505,
+            "[0.09999999403953552,27]"
+        ],
+        [
+            401,
+            "2400869836852708862"
+        ],
+        [
+            402,
+            "1109"
+        ],
+        [
+            407,
+            "[[\"loadTimes\",\"csi\",\"app\"],35,34,null,false,false,true,37,true,true,true,true,true,[\"Raven\",\"_sharedLibs\",\"hsw\",\"__wdata\"],[[\"getElementsByClassName\",[]],[\"getElementById\",[]],[\"querySelector\",[]],[\"querySelectorAll\",[]]],[],true]"
+        ],
+        [
+            412,
+            "15584660433093862032"
+        ],
+        [
+            2402,
+            "[\"Google Inc. (NVIDIA)\",\"ANGLE (NVIDIA, NVIDIA GeForce GT 755M Direct3D11 vs_5_0 ps_5_0, D3D11)\"]"
+        ],
+        [
+            2420,
+            //"[[\"wiTJkJNcQ9GAOEVWmDETELCmYuCTxzMl\",\"3\",\"14\",\"LAOZPNMUDIYQK\"],[\"o80VKVkSCnkMlaJMlI0TI1kR=U0MFFTMPaJMlEhdfVzxWMkMlaJMlchdfVzxWaJMlUkAzZGZ1nTRXEDMYUYn1UJTWITjIVFMYUCSmdEczRmZWITjpdlSFPkqWITj\",\"1\",\"64\",\"AYWWXQHPHYNJB\"]]"
+            JSON.stringify([
+                __EncryptStr("Google Inc. (NVIDIA)"),
+                __EncryptStr("ANGLE (NVIDIA, NVIDIA GeForce GT 755M Direct3D11 vs_5_0 ps_5_0, D3D11)"),
+            ])
+        ],
+        [
+            2403,
+            "[\"Google Inc. (NVIDIA)\",\"ANGLE (NVIDIA, NVIDIA GeForce GT 755M Direct3D11 vs_5_0 ps_5_0, D3D11)\"]"
+        ],
+        [
+            2401,
+            "9735654799273810948"
+        ],
+        [
+            2408,
+            "true"
+        ],
+        [
+            2407,
+            "13177607191192652685"
+        ],
+        [
+            2409,
+            "[2147483647,2147483647,4294967294]"
+        ],
+        [
+            2410,
+            "[16,1024,4096,7,12,120,[23,127,127]]"
+        ],
+        [
+            2411,
+            "[32767,32767,16384,8,8,8]"
+        ],
+        [
+            2412,
+            "[1,1024,1,1,4]"
+        ],
+        [
+            2413,
+            "[2147483647,2147483647,2147483647,2147483647]"
+        ],
+        [
+            2414,
+            "[16384,32,16384,2048,2,2048]"
+        ],
+        [
+            2415,
+            "[4,120,4]"
+        ],
+        [
+            2416,
+            "[24,24,65536,212988,200704]"
+        ],
+        [
+            2417,
+            "[16,4095,30,16,16380,120,12,120,[23,127,127]]"
+        ],
+        [
+            901,
+            "135869055876678538"
+        ],
+        [
+            905,
+            "[[true,\"en-US\",true,\"Microsoft David - English (United States)\",\"Microsoft David - English (United States)\"],[false,\"en-US\",true,\"Microsoft Mark - English (United States)\",\"Microsoft Mark - English (United States)\"],[false,\"en-US\",true,\"Microsoft Zira - English (United States)\",\"Microsoft Zira - English (United States)\"]]"
+        ],
+        [
+            1302,
+            "[1,2,3,4]"
+        ],
+        [
+            1904,
+            "[0,11411,11411]"
+        ],
+        [
+            3210,
+            "[170446008866,170446008866,null,null,4294705152,true,true,true,null]"
+        ],
+        [
+            3211,
+            "[\"0QjnWADo4YjnxcDM\",\"4\",\"4\",\"WOZKNBWOELHEI\"]"
+        ],
+        [
+            702,
+            "[\"Windows\",\"10.0.0\",null,\"64\",\"x86\",\"117.0.5938.63\"]"
+        ],
+        [
+            2001,
+            "4780882662087796712"
+        ],
+        [
+            2002,
+            "[\"denied\",\"denied\"]"
+        ],
+        [
+            0,
+            "50.29999999701977"
+        ]
+    ]
+
+    function generateRandomString(length) {
+        let result = '';
+        const characters = '0123456789';
+
+        for (let i = 0; i < length; i++) {
+            const randomIndex = Math.floor(Math.random() * characters.length);
+            result += characters.charAt(randomIndex);
+        }
+
+        return result;
+    }
+
+    let fp_uwu = {
+        components: {
+            "version": "1.39.0/bf600bd",
+            "navigator": {
+                "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+                "language": "fr-FR",
+                "languages": [
+                    "fr-FR",
+                    "fr",
+                    "en-US",
+                    "en"
+                ],
+                "platform": "Win32",
+                "max_touch_points": 0,
+                "webdriver": false,
+                "notification_query_permission": null,
+                "plugins_undefined": false
+            },
+            "screen": {
+                "color_depth": 24,
+                "pixel_depth": 24,
+                "width": 2560,
+                "height": 1440,
+                "avail_width": 2560,
+                "avail_height": 1400
+            },
+            "device_pixel_ratio": 1.5,
+            "has_session_storage": true,
+            "has_local_storage": true,
+            "has_indexed_db": true,
+            "web_gl_hash": "-1",
+            "canvas_hash": "14018374026901722784",
+            "has_touch": false,
+            "notification_api_permission": "Denied",
+            "chrome": true,
+            "to_string_length": 33,
+            "err_firefox": null,
+            "r_bot_score": 0,
+            "r_bot_score_suspicious_keys": [],
+            "r_bot_score_2": 0,
+            "audio_hash": "-1",
+            "extensions": [
+                false
+            ],
+            "parent_win_hash": "17464972382824382480",
+            "webrtc_hash": "-1",
+            "performance_hash": "2372271609278715010",
+            "unique_keys": "_,regeneratorRuntime,__sentry_instrumentation_handlers__,1,GLOBAL_ENV,__BILLING_STANDALONE__,webpackChunkdiscord_app,__localeData__,hcaptcha,0,__OVERLAY__,DiscordErrors,clearImmediate,grecaptcha,DiscordSentry,__timingFunction,hcaptchaOnLoad,IntlPolyfill,__SENTRY__,__DISCORD_WINDOW_ID,setImmediate,__SECRET_EMOTION__,2,platform",
+            "inv_unique_keys": "localStorage,_sharedLibs,hsw,__wdata,sessionStorage",
+            "features": {
+                "performance_entries": true,
+                "web_audio": true,
+                "web_rtc": true,
+                "canvas_2d": true,
+                "fetch": true
+            }
+        },
+        fingerprint_events: [
+            [
+                3,
+                "21174.70000001788"
+            ],
+            [
+                1902,
+                "57"
+            ],
+            [
+                1901,
+                "15307345790125003576"
+            ],
+            [
+                1101,
+                "10086782650988969184"
+            ],
+            [
+                1103,
+                "4932383211497360507"
+            ],
+            [
+                1105,
+                "17157476241021694346"
+            ],
+            [
+                1107,
+                "[[218,[218,218,218,255,218,218,218,255,218,218,218,255,218,218,218,255]],[[11,0,0,95.96875,15,4,96.765625],[[12,0,-1,113.125,17,4,113],[11,0,0,111,12,4,111],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[12,0,0,109.640625,14,3,110.1953125]]]]"
+            ],
+            [
+                201,
+                "13122422878918113034"
+            ],
+            [
+                211,
+                "[-6.172840118408203,-20.710678100585938,120.71067810058594,-20.710678100585938,141.42135620117188,120.71067810058594,-20.710678100585938,141.42135620117188,-20.710678100585938,-20.710678100585938,0,0,300,150,false,[0,15,33,34,35,37,39,75]]"
+            ],
+            [
+                3401,
+                "4226317358175830201"
+            ],
+            [
+                3403,
+                "[[[\"https://newassets.hcaptcha.com/captcha/v1/1b812e2/hcaptcha.js\",0,5]],[[\"*\",84,9]]]"
+            ],
+            [
+                803,
+                "[1,4,5,7,9,12,20,21,24,25,29]"
+            ],
+            [
+                604,
+                "[\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36\",\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36\",8,12,\"fr-FR\",[\"fr-FR\",\"fr\",\"en-US\",\"en\"],\"Win32\",null,[\"Google Chrome 116\",\"Not;A=Brand 8\",\"Chromium 116\"],false,\"Windows\",2,5,true,false,0,false,false,true,\"[object Keyboard]\",false,false]"
+            ],
+            [
+                2801,
+                "4631229088072584217"
+            ],
+            [
+                2805,
+                "[[277114314453,277114314460,277114314451,357114314456,277114314452,554228628898,57114314443,717114314371391,554228628897,277114314456,1108457257862,277114314450,554228628919,277114314460,277114314451],false]"
+            ],
+            [
+                107,
+                "[2560,1440,2560,1400,24,24,false,0,1.5,1705,1372,true,true,true,false]"
+            ],
+            [
+                302,
+                "12818603829562976447"
+            ],
+            [
+                303,
+                "[\"Arial\",\"\\\"Segoe UI\\\"\"]"
+            ],
+            [
+                301,
+                "8383473043360077444"
+            ],
+            [
+                304,
+                "623"
+            ],
+            [
+                1401,
+                "\"Europe/Paris\""
+            ],
+            [
+                1402,
+                "[\"Europe/Paris\",-60,-60,-3203647761000,\"heure d’été d’Europe centrale\",\"fr\"]"
+            ],
+            [
+                1403,
+                JSON.stringify(__EncryptStr("Europe/Paris"))
+            ],
+            [
+                3504,
+                (Date.now() / 1000).toString()
+            ],
+            [
+                3501,
+                "[[\"navigation:newassets.hcaptcha.com\",0.09999999403953552,1.100000023841858],[\"script:newassets.hcaptcha.com\",0.2499999850988388,2.8999999910593033],[\"xmlhttprequest:hcaptcha.com\",0,37.30000001192093]]"
+            ],
+            [
+                3503,
+                "0.19999998807907104"
+            ],
+            [
+                3502,
+                "2.8999999910593033"
+            ],
+            [
+                3505,
+                "[0.09999999403953552,27]"
+            ],
+            [
+                401,
+                "2400869836852708862"
+            ],
+            [
+                402,
+                "1109"
+            ],
+            [
+                407,
+                "[[\"loadTimes\",\"csi\",\"app\"],35,34,null,false,false,true,37,true,true,true,true,true,[\"Raven\",\"_sharedLibs\",\"hsw\",\"__wdata\"],[[\"getElementsByClassName\",[]],[\"getElementById\",[]],[\"querySelector\",[]],[\"querySelectorAll\",[]]],[],true]"
+            ],
+            [
+                412,
+                "15584660433093862032"
+            ],
+            [
+                2402,
+                "[\"Google Inc. (AMD)\",\"ANGLE (AMD, AMD Radeon R7 250 Series Direct3D11 vs_5_0 ps_5_0, D3D11)\"]"
+            ],
+            [
+                2420,
+                JSON.stringify([
+                    __EncryptStr("Google Inc. (AMD)"),
+                    __EncryptStr("ANGLE (AMD, AMD Radeon R7 250 Series Direct3D11 vs_5_0 ps_5_0, D3D11)"),
+                ])
+            ],
+            [
+                2403,
+                "[\"Google Inc. (AMD)\",\"ANGLE (AMD, AMD Radeon R7 250 Series Direct3D11 vs_5_0 ps_5_0, D3D11)\"]"
+            ],
+            [
+                2401,
+                "1565864735756980674"
+            ],
+            [
+                2408,
+                "true"
+            ],
+            [
+                2407,
+                "6174559167396075939"
+            ],
+            [
+                2409,
+                "[2147483647,2147483647,4294967294]"
+            ],
+            [
+                2410,
+                "[16,1024,4096,7,12,120,[23,127,127]]"
+            ],
+            [
+                2411,
+                "[32767,32767,16384,8,8,8]"
+            ],
+            [
+                2412,
+                "[1,1024,1,1,4]"
+            ],
+            [
+                2413,
+                "[2147483647,2147483647,2147483647,2147483647]"
+            ],
+            [
+                2414,
+                "[16384,32,16384,2048,2,2048]"
+            ],
+            [
+                2415,
+                "[4,120,4]"
+            ],
+            [
+                2416,
+                "[24,24,65536,212992,200704]"
+            ],
+            [
+                2417,
+                "[16,4096,30,16,16384,120,12,120,[23,127,127]]"
+            ],
+            [
+                901,
+                "135869055876678538"
+            ],
+            [
+                905,
+                "[[true,\"en-US\",true,\"Microsoft David - English (United States)\",\"Microsoft David - English (United States)\"],[false,\"en-US\",true,\"Microsoft Mark - English (United States)\",\"Microsoft Mark - English (United States)\"],[false,\"en-US\",true,\"Microsoft Zira - English (United States)\",\"Microsoft Zira - English (United States)\"]]"
+            ],
+            [
+                1302,
+                "[0,1,2,3,4]"
+            ],
+            [
+                1904,
+                "[0,11411,11411]"
+            ],
+            [
+                3210,
+                "[251395124717,251395124717,null,null,4294705152,true,true,true,null]"
+            ],
+            [
+                3211,
+                "[\"ZNYUtMZKtNxiDN3E\",\"b\",\"e\",\"YHOTIVSZRKGTQ\"]"
+            ],
+            [
+                702,
+                "[\"Windows\",\"15.0.0\",null,\"64\",\"x86\",\"116.0.0.0\"]"
+            ],
+            [
+                2001,
+                "4780882662087796712"
+            ],
+            [
+                2002,
+                "[\"denied\",\"denied\"]"
+            ],
+            [
+                0,
+                "62.599999994039536"
+            ]
+        ],
+        "fingerprint_suspicious_events": [],
+        "perf": [
+            [
+                1,
+                11.0
+            ],
+            [
+                2,
+                67.0
+            ],
+            [
+                3,
+                0.0
+            ]
+        ]
+    }
+
+    let fp_vanilla = {
+        "proof_spec": {
+            "difficulty": 2,
+            "fingerprint_type": 0,
+            "_type": "w",
+            "data": "0YM/fLYVCWx8QhoFXnuOo3Jq/ThgceZmU5oSzettZ+LhfVC05qiTiRXWIXnqGbWxp2R4Qdr6S+df3JrdFKRbXbMO6dULhhcebN+t0bghWwL3RULU14mfwdqatEK2xVD6WBYsgjjBhZ8BXxyEjxzTAiJ7eKeSqGH3zm/QvHm1c3mOpfkepLoqQzuA9w==I3QNgbmSeMIHxy5d",
+            "_location": "https://newassets.hcaptcha.com/c/bf600bd",
+            "timeout_value": 1000.0
+        },
+        "components": {
+            "version": "1.39.0/bf600bd",
+            "navigator": {
+                "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+                "language": "en-US",
+                "languages": [
+                    "en-US",
+                    "en"
+                ],
+                "platform": "Win32",
+                "max_touch_points": 0,
+                "webdriver": false,
+                "notification_query_permission": null,
+                "plugins_undefined": false
+            },
+            "screen": {
+                "color_depth": 24,
+                "pixel_depth": 24,
+                "width": 1536,
+                "height": 864,
+                "avail_width": 1536,
+                "avail_height": 816
+            },
+            "device_pixel_ratio": 1.25,
+            "has_session_storage": true,
+            "has_local_storage": true,
+            "has_indexed_db": true,
+            "web_gl_hash": "-1",
+            "canvas_hash": "8890951801382608581",
+            "has_touch": false,
+            "notification_api_permission": "Denied",
+            "chrome": true,
+            "to_string_length": 33,
+            "err_firefox": null,
+            "r_bot_score": 0,
+            "r_bot_score_suspicious_keys": [],
+            "r_bot_score_2": 0,
+            "audio_hash": "-1",
+            "extensions": [
+                false
+            ],
+            "parent_win_hash": "3669109113571515089",
+            "webrtc_hash": "-1",
+            "performance_hash": "2372271609278715010",
+            "unique_keys": "_0x30e104,_0x5aad47,__mobxInstanceCount,dataLayer,_0x5ee3,__zone_symbol__messagefalse,__zone_symbol__mouseupfalse,__core-js_shared__,__zone_symbol__FileReader,l,_0x3168bb,__zone_symbol__alert,lsCookieValue,_0x4c0d23,ng,_0x4c29ad,_0x37953e,_0x2c563f,google_tag_manager,_0x3414,_0x5d7372,core,myUndefined,__zone_symbol__clearTimeout,CONSOLE_ENABLED,currentCookie,ka,1,__zone_symbol__webkitRequestAnimationFrame,__zone_symbol__blurfalse,_0x15e4,protectionSubmitCaptcha,getAllAngularTestabilities,typeUndefined,_0x6528,cname,_0x29d4d9,webpackJsonp,__zone_symbol__prompt,reese84,gaGlobal,_0x341d51,url,_0x5818e5,_0x4d05bb,_0x1d7d74,_0x4ef19f,a1_0x4d5f,_0x75590d,a1_0xcd60,__zone_symbol__confirm,getAngularTestability,hcaptcha,0,__zone_symbol__focusfalse,_0x1115,_0x204c,__zone_symbol__hashchangefalse,__zone_symbol__ON_PROPERTYmessage,__zone_symbol__webkitCancelAnimationFrame,google_tag_data,grecaptcha,reEnable,_0x1e96f5,__zone_symbol__cancelAnimationFrame,_0x34b5ed,_0x3f365e,_0x3266f7,_0x389ca0,__zone_symbol__pagehidefalse,_0x210e,m,__zone_symbol__WebKitMutationObserver,reese84interrogator,__zone_symbol__ZoneAwarePromise,ga,gtag,Zone,_0x395e,__zone_symbol__scrollfalse,__zone_symbol__Promise,__zone_symbol__resizefalse,__zone_symbol__pageshowfalse,__zone_symbol__MutationObserver,__zone_symbol__IntersectionObserver,htmlCookieValue,_0x182a,initializeProtection,_0x1143,gaplugins,cookieElements,__zone_symbol__setInterval,response,_0x40132c,getAllAngularRootElements,__zone_symbol__clearInterval,__zone_symbol__requestAnimationFrame,_0x1b5e12,_0xa0859e,_0xa515b1,_0x242114,_0x44e49c,__zone_symbol__popstatefalse,_0x535c,frameworkStabilizers,r,2,_0x152420,cvalue,_0x2df5c2,_0x3960,__zone_symbol__setTimeout,GoogleAnalyticsObject,_0x4c71dd,payload,_0x17b7ba,_0x3b69,__zone_symbol__unloadfalse,_0x2780,gaData",
+            "inv_unique_keys": "_sharedLibs,hsw,__wdata",
+            "features": {
+                "performance_entries": true,
+                "web_audio": true,
+                "web_rtc": true,
+                "canvas_2d": true,
+                "fetch": true
+            }
+        },
+        "fingerprint_events": [
+            [
+                3,
+                "40167.79999998212"
+            ],
+            [
+                1902,
+                "57"
+            ],
+            [
+                1901,
+                "15307345790125003576"
+            ],
+            [
+                1101,
+                "1308681860871815407"
+            ],
+            [
+                1103,
+                "4932383211497360507"
+            ],
+            [
+                1105,
+                "17157476241021694346"
+            ],
+            [
+                1107,
+                "[[10,[10,10,10,255,10,10,10,255,10,10,10,255,10,10,10,255]],[[11,0,0,95.96875,15,4,96.765625],[[12,0,-1,113.125,17,4,113],[11,0,0,111,12,4,111],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[12,0,0,109.640625,14,3,110.1953125]]]]"
+            ],
+            [
+                201,
+                "13122422878918113034"
+            ],
+            [
+                211,
+                "[-6.172840118408203,-20.710678100585938,120.71067810058594,-20.710678100585938,141.42135620117188,120.71067810058594,-20.710678100585938,141.42135620117188,-20.710678100585938,-20.710678100585938,0,0,300,150,false,[0,15,33,34,35,37,39,75]]"
+            ],
+            [
+                3401,
+                "4226317358175830201"
+            ],
+            [
+                3403,
+                "[[[\"https://newassets.hcaptcha.com/captcha/v1/1b812e2/hcaptcha.js\",0,5]],[[\"*\",84,9]]]"
+            ],
+            [
+                803,
+                "[1,4,5,7,9,12,20,21,24,25,29]"
+            ],
+            [
+                604,
+                "[\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\",\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\",8,8,\"en-US\",[\"en-US\",\"en\"],\"Win32\",null,[\"Google Chrome 117\",\"Not;A=Brand 8\",\"Chromium 117\"],false,\"Windows\",2,5,true,false,150,false,false,true,\"[object Keyboard]\",false,false]"
+            ],
+            [
+                2801,
+                "4631229088072584217"
+            ],
+            [
+                2805,
+                "[[277114314453,277114314460,277114314451,357114314456,277114314452,554228628898,57114314443,717114314371391,554228628897,277114314456,1108457257862,277114314450,554228628919,277114314460,277114314451],false]"
+            ],
+            [
+                107,
+                "[1536,864,1536,816,24,24,false,0,1.25,1536,816,true,true,true,false]"
+            ],
+            [
+                302,
+                "12818603829562976447"
+            ],
+            [
+                303,
+                "[\"Arial\",\"\\\"Segoe UI\\\"\"]"
+            ],
+            [
+                301,
+                "8383473043360077444"
+            ],
+            [
+                304,
+                "623"
+            ],
+            [
+                1401,
+                "\"America/New_York\""
+            ],
+            [
+                1402,
+                "[\"America/New_York\",300,300,-3203550238000,\"Eastern Daylight Time\",\"en-US\"]"
+            ],
+            [
+                1403,
+                "[\"ZiZkMl8kZ49lWwnhbC5mZzpg\",\"1\",\"7\",\"TDHQGEDGASENT\"]"
+            ],
+            [
+                3504,
+                "1696324015877.1"
+            ],
+            [
+                3501,
+                "[[\"navigation:newassets.hcaptcha.com\",0.09999999403953552,1.5],[\"script:newassets.hcaptcha.com\",0.3500000089406967,2.7000000029802322],[\"xmlhttprequest:hcaptcha.com\",0,855.4000000059605]]"
+            ],
+            [
+                3503,
+                "0.30000001192092896"
+            ],
+            [
+                3502,
+                "2.7000000029802322"
+            ],
+            [
+                3505,
+                "[0.09999999403953552,27]"
+            ],
+            [
+                401,
+                "2400869836852708862"
+            ],
+            [
+                402,
+                "1109"
+            ],
+            [
+                407,
+                "[[\"loadTimes\",\"csi\",\"app\"],35,34,null,false,false,true,37,true,true,true,true,true,[\"Raven\",\"_sharedLibs\",\"hsw\",\"__wdata\"],[[\"getElementsByClassName\",[]],[\"getElementById\",[]],[\"querySelector\",[]],[\"querySelectorAll\",[]]],[],true]"
+            ],
+            [
+                412,
+                "15584660433093862032"
+            ],
+            [
+                2402,
+                "[\"Google Inc. (NVIDIA)\",\"ANGLE (NVIDIA, NVIDIA GeForce GTX 660 Ti Direct3D11 vs_5_0 ps_5_0, D3D11)\"]"
+            ],
+            [
+                2420,
+                "[[\"JG5mbmTGzo0UvINEsAlcMyUcsTJmLwIt\",\"19\",\"17\",\"VATATPHCVSPXZ\"],[\"2AdmyucWl9EmyucW2DLzprNDwiTJF1kWVpLuwiTJouuTaVLWsnkmLAjmLiVrYnkV==qVZuVmxkcmyuyzQ9VnfBZqyucmyusbQ9VnfBdmyusV6LMD0t2mVFTmwiTJlpHmyuIn\",\"11\",\"44\",\"SSUIMZCQLDRNS\"]]"
+            ],
+            [
+                2403,
+                "[\"Google Inc. (NVIDIA)\",\"ANGLE (NVIDIA, NVIDIA GeForce GTX 660 Ti Direct3D11 vs_5_0 ps_5_0, D3D11)\"]"
+            ],
+            [
+                2401,
+                "9462748366083681595"
+            ],
+            [
+                2408,
+                "true"
+            ],
+            [
+                2407,
+                "13177607191192652685"
+            ],
+            [
+                2409,
+                "[2147483647,2147483647,4294967294]"
+            ],
+            [
+                2410,
+                "[16,1024,4096,7,12,120,[23,127,127]]"
+            ],
+            [
+                2411,
+                "[32767,32767,16384,8,8,8]"
+            ],
+            [
+                2412,
+                "[1,1024,1,1,4]"
+            ],
+            [
+                2413,
+                "[2147483647,2147483647,2147483647,2147483647]"
+            ],
+            [
+                2414,
+                "[16384,32,16384,2048,2,2048]"
+            ],
+            [
+                2415,
+                "[4,120,4]"
+            ],
+            [
+                2416,
+                "[24,24,65536,212988,200704]"
+            ],
+            [
+                2417,
+                "[16,4095,30,16,16380,120,12,120,[23,127,127]]"
+            ],
+            [
+                901,
+                "135869055876678538"
+            ],
+            [
+                905,
+                "[[true,\"en-US\",true,\"Microsoft David - English (United States)\",\"Microsoft David - English (United States)\"],[false,\"en-US\",true,\"Microsoft Mark - English (United States)\",\"Microsoft Mark - English (United States)\"],[false,\"en-US\",true,\"Microsoft Zira - English (United States)\",\"Microsoft Zira - English (United States)\"]]"
+            ],
+            [
+                1302,
+                "[0,1,2,3,4]"
+            ],
+            [
+                1904,
+                "[0,11411,11411]"
+            ],
+            [
+                3210,
+                "[253552018630,253552018630,null,null,4294705152,true,true,true,null]"
+            ],
+            [
+                3211,
+                "[\"zM1uJMwEdo2MdMyu\",\"4\",\"2\",\"OORDBUOOJGUDO\"]"
+            ],
+            [
+                702,
+                "[\"Windows\",\"15.0.0\",null,\"64\",\"x86\",\"117.0.5938.63\"]"
+            ],
+            [
+                2001,
+                "4780882662087796712"
+            ],
+            [
+                2002,
+                "[\"denied\",\"denied\"]"
+            ],
+            [
+                0,
+                "48.900000005960464"
+            ]
+        ],
+        "messages": null,
+        "stack_data": null,
+        "fingerprint_suspicious_events": [],
+        "stamp": "1:2:2023-10-03:0YM/fLYVCWx8QhoFXnuOo3Jq/ThgceZmU5oSzettZ+LhfVC05qiTiRXWIXnqGbWxp2R4Qdr6S+df3JrdFKRbXbMO6dULhhcebN+t0bghWwL3RULU14mfwdqatEK2xVD6WBYsgjjBhZ8BXxyEjxzTAiJ7eKeSqGH3zm/QvHm1c3mOpfkepLoqQzuA9w==I3QNgbmSeMIHxy5d::y9YvD5F8:1",
+        "errs": {
+            "list": []
+        },
+        "perf": [
+            [
+                1,
+                8.0
+            ],
+            [
+                2,
+                53.0
+            ],
+            [
+                3,
+                0.0
+            ]
+        ]
+    }
+
+    function b64DecodeUnicode(str) {
+        return decodeURIComponent(atob(str).split('').map(function (c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+    }
 
     var yI = Object.freeze({
         __proto__: null,
         inject: function (len, ptr) {
-            console.log('inject', ptr, len);
-
             try {
                 let ndata = JSON.parse(__getStrFromWasm(ptr, len))
-                //console.log(n)
+
+                //fp_json_curr.components.canvas_hash = generateRandomString(19)
+                //fp_json_curr.components.performance_hash = generateRandomString(19)
+
+                //fp_uwu.components.web_gl_hash = generateRandomString(19)
+                //fp_uwu.components.audio_hash = generateRandomString(19)
+                //fp_uwu.components.webrtc_hash = generateRandomString(19)
+
+                //fp_json_curr.components.device_pixel_ratio = 1.0
 
                 let base_payload = JSON.stringify({
                     "proof_spec": ndata.proof_spec,
-                    "components": {
-                        "version": "1.39.0/bf600bd",
-                        "navigator": {
-                            "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
-                            "language": "fr-FR",
-                            "languages": [
-                                "fr-FR",
-                                "fr",
-                                "en-US",
-                                "en"
-                            ],
-                            "platform": "Win32",
-                            "max_touch_points": 0,
-                            "webdriver": false,
-                            "notification_query_permission": null,
-                            "plugins_undefined": false
-                        },
-                        "screen": {
-                            "color_depth": 30,
-                            "pixel_depth": 30,
-                            "width": 1920,
-                            "height": 1080,
-                            "avail_width": 1920,
-                            "avail_height": 1080
-                        },
-                        "device_pixel_ratio": 1.0,
-                        "has_session_storage": true,
-                        "has_local_storage": true,
-                        "has_indexed_db": true,
-                        "web_gl_hash": "-1",
-                        "canvas_hash": "17523312123854488741",
-                        "has_touch": false,
-                        "notification_api_permission": "Denied",
-                        "chrome": true,
-                        "to_string_length": 33,
-                        "err_firefox": null,
-                        "r_bot_score": 0,
-                        "r_bot_score_suspicious_keys": [],
-                        "r_bot_score_2": 0,
-                        "audio_hash": "-1",
-                        "extensions": [
-                            false
-                        ],
-                        "parent_win_hash": "17427492278707878793",
-                        "webrtc_hash": "-1",
-                        "performance_hash": "2372271609278715010",
-                        "unique_keys": "_,regeneratorRuntime,__sentry_instrumentation_handlers__,1,GLOBAL_ENV,__BILLING_STANDALONE__,webpackChunkdiscord_app,__localeData__,hcaptcha,0,__OVERLAY__,DiscordErrors,clearImmediate,grecaptcha,DiscordSentry,__timingFunction,hcaptchaOnLoad,IntlPolyfill,__SENTRY__,__DISCORD_WINDOW_ID,setImmediate,__SECRET_EMOTION__,platform",
-                        "inv_unique_keys": "localStorage,_sharedLibs,hsw,__wdata,sessionStorage",
-                        "features": {
-                            "performance_entries": true,
-                            "web_audio": true,
-                            "web_rtc": true,
-                            "canvas_2d": true,
-                            "fetch": true
-                        }
-                    },
-                    "fingerprint_events": [
-                        [
-                            3,
-                            "74002.59999999404"
-                        ],
-                        [
-                            1902,
-                            "57"
-                        ],
-                        [
-                            1901,
-                            "15307345790125003576"
-                        ],
-                        [
-                            1101,
-                            "5444991433581454510"
-                        ],
-                        [
-                            1103,
-                            "4932383211497360507"
-                        ],
-                        [
-                            1105,
-                            "17157476241021694346"
-                        ],
-                        [
-                            1107,
-                            "[[39,[39,39,39,255,39,39,39,255,39,39,39,255,39,39,39,255]],[[11,0,0,95.96875,15,4,96.765625],[[12,0,-1,113.125,17,4,113],[11,0,0,111,12,4,111],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[12,0,0,109.640625,14,3,110.1953125]]]]"
-                        ],
-                        [
-                            201,
-                            "13122422878918113034"
-                        ],
-                        [
-                            211,
-                            "[-6.172840118408203,-20.710678100585938,120.71067810058594,-20.710678100585938,141.42135620117188,120.71067810058594,-20.710678100585938,141.42135620117188,-20.710678100585938,-20.710678100585938,0,0,300,150,false,[0,15,33,34,35,37,39,75]]"
-                        ],
-                        [
-                            3401,
-                            "4226317358175830201"
-                        ],
-                        [
-                            3403,
-                            "[[[\"https://newassets.hcaptcha.com/captcha/v1/0c844f3/hcaptcha.js\",0,5]],[[\"*\",84,9]]]"
-                        ],
-                        [
-                            803,
-                            "[1,3,4,5,7,9,12,20,21,24,25,29]"
-                        ],
-                        [
-                            604,
-                            "[\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36\",\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36\",8,8,\"fr-FR\",[\"fr-FR\",\"fr\",\"en-US\",\"en\"],\"Win32\",null,[\"Google Chrome 116\",\"Not;A=Brand 8\",\"Chromium 116\"],false,\"Windows\",2,5,true,false,0,false,false,true,\"[object Keyboard]\",false,false]"
-                        ],
-                        [
-                            2801,
-                            "4631229088072584217"
-                        ],
-                        [
-                            2805,
-                            "[[277114314453,277114314460,277114314451,357114314456,277114314452,554228628898,57114314443,717114314371391,554228628897,277114314456,1108457257862,277114314450,554228628919,277114314460,277114314451],false]"
-                        ],
-                        [
-                            107,
-                            "[1920,1080,1920,1080,30,30,false,0,1,1705,1080,true,true,true,false]"
-                        ],
-                        [
-                            302,
-                            "12818603829562976447"
-                        ],
-                        [
-                            303,
-                            "[\"Arial\",\"\\\"Segoe UI\\\"\"]"
-                        ],
-                        [
-                            301,
-                            "8383473043360077444"
-                        ],
-                        [
-                            304,
-                            "623"
-                        ],
-                        [
-                            1401,
-                            "\"Europe/Paris\""
-                        ],
-                        [
-                            1402,
-                            "[\"Europe/Paris\",-60,-60,-3203647761000,\"heure d’été d’Europe centrale\",\"fr\"]"
-                        ],
-                        [
-                            1403,
-                            "[\"ZkFmyXZkMliUbkVxZ=E1\",\"c\",\"3\",\"GYSXYIRCYJTDD\"]"
-                        ],
-                        [
-                            3504,
-                            (Date.now() / 1000).toString()
-                        ],
-                        [
-                            3501,
-                            "[[\"navigation:newassets.hcaptcha.com\",0.20000000298023224,1.199999988079071],[\"script:newassets.hcaptcha.com\",0.19999999552965164,3.100000001490116],[\"xmlhttprequest:hcaptcha.com\",0,45.1000000089407]]"
-                        ],
-                        [
-                            3503,
-                            "0.20000000298023224"
-                        ],
-                        [
-                            3502,
-                            "3.100000001490116"
-                        ],
-                        [
-                            3505,
-                            "[0.09999999403953552,27]"
-                        ],
-                        [
-                            401,
-                            "2400869836852708862"
-                        ],
-                        [
-                            402,
-                            "1109"
-                        ],
-                        [
-                            407,
-                            "[[\"loadTimes\",\"csi\",\"app\"],35,34,null,false,false,true,37,true,true,true,true,true,[\"Raven\",\"_sharedLibs\",\"hsw\",\"__wdata\"],[[\"getElementsByClassName\",[]],[\"getElementById\",[]],[\"querySelector\",[]],[\"querySelectorAll\",[]]],[],true]"
-                        ],
-                        [
-                            412,
-                            "15584660433093862032"
-                        ],
-                        [
-                            2402,
-                            "[\"Google Inc. (Intel)\",\"ANGLE (Intel, Intel(R) HD Graphics 520 Direct3D11 vs_5_0 ps_5_0, D3D11)\"]"
-                        ],
-                        [
-                            2420,
-                            "[[\"jjFXcp52Z=gysWZ3ZUlCMyuysWvmLWiT\",\"2\",\"17\",\"VDSWJISSJUHQJ\"],[\"KMlAJMl0KWthVUQNdUXEtkwitjIV2x18fMdjtjwitjOV2x18fMwitjQVHZX9mZzAVMXAJMlUJMwAJMlMfZTjgD19WZwitjUbfMYUSV6ZWc4hCRpAJMlGSV6ZWc4N\",\"c\",\"6e\",\"OBGKFDYXITYJY\"]]"
-                        ],
-                        [
-                            2403,
-                            "[\"Google Inc. (Intel)\",\"ANGLE (Intel, Intel(R) HD Graphics 520 Direct3D11 vs_5_0 ps_5_0, D3D11)\"]"
-                        ],
-                        [
-                            2401,
-                            "309671973083808779"
-                        ],
-                        [
-                            2408,
-                            "true"
-                        ],
-                        [
-                            2407,
-                            "6174559167396075939"
-                        ],
-                        [
-                            2409,
-                            "[2147483647,2147483647,4294967294]"
-                        ],
-                        [
-                            2410,
-                            "[16,1024,4096,7,12,120,[23,127,127]]"
-                        ],
-                        [
-                            2411,
-                            "[32767,32767,16384,8,8,16]"
-                        ],
-                        [
-                            2412,
-                            "[1,1024,1,1,4]"
-                        ],
-                        [
-                            2413,
-                            "[2147483647,2147483647,2147483647,2147483647]"
-                        ],
-                        [
-                            2414,
-                            "[16384,32,16384,2048,2,2048]"
-                        ],
-                        [
-                            2415,
-                            "[4,120,4]"
-                        ],
-                        [
-                            2416,
-                            "[24,24,65536,212992,200704]"
-                        ],
-                        [
-                            2417,
-                            "[16,4096,30,16,16384,120,12,120,[23,127,127]]"
-                        ],
-                        [
-                            901,
-                            "135869055876678538"
-                        ],
-                        [
-                            905,
-                            "[[true,\"en-US\",true,\"Microsoft David - English (United States)\",\"Microsoft David - English (United States)\"],[false,\"en-US\",true,\"Microsoft Mark - English (United States)\",\"Microsoft Mark - English (United States)\"],[false,\"en-US\",true,\"Microsoft Zira - English (United States)\",\"Microsoft Zira - English (United States)\"]]"
-                        ],
-                        [
-                            1302,
-                            "[1,2,3,4]"
-                        ],
-                        [
-                            1904,
-                            "[0,11411,11411]"
-                        ],
-                        [
-                            702,
-                            "[\"Windows\",\"8.0.0\",null,\"64\",\"x86\",\"116.0.0.0\"]"
-                        ],
-                        [
-                            3210,
-                            "[612659099826,612659099826,null,null,4294705152,true,true,true,null]"
-                        ],
-                        [
-                            3211,
-                            "[\"kto4Ijn2Ejm2utow\",\"2\",\"9\",\"NFTMUFOOCXOLM\"]"
-                        ],
-                        [
-                            2001,
-                            "4780882662087796712"
-                        ],
-                        [
-                            2002,
-                            "[\"denied\",\"denied\"]"
-                        ],
-                        [
-                            0,
-                            "61.5"
-                        ]
-                    ],
+                    "components": fp_json_curr.components,
+                    "fingerprint_events": fp_json_curr.fingerprint_events,
                     "messages": null,
                     "stack_data": null,
                     "fingerprint_suspicious_events": [],
@@ -3056,51 +3633,30 @@ var hsw = function () {
                     "errs": {
                         "list": []
                     },
-                    "perf": [
-                        [
-                            1,
-                            10.0
-                        ],
-                        [
-                            2,
-                            67.0
-                        ],
-                        [
-                            3,
-                            0.0
-                        ]
-                    ]
+                    "stack_data": [
+                        //"new Promise (<anonymous>)"
+                    ],
+                    "perf": fp_json_curr.perf
                 })
 
-                //console.log(base_payload)
-                // console.log(n.stamp)
+                console.log(base_payload)
 
-                //const data = appendJsonToMemory(base_payload);
                 const data = appendJsonToMemory(base_payload);
                 jlen = data.len
                 jptr = data.ptr
-
-                // console.log(`JSON appended at ptr: ${data.ptr}, len: ${data.len}`);
-
             } catch (err) { console.log(err) }
         },
         getPtr: function () {
-            // console.log('get jptr', jptr)
             return jptr
         },
         getLen: function () {
-            //console.log('get jlen', jlen)
             return jlen
         },
         __wbg_availHeight_5a38eff40ca35e9b: function () {
-            return GI((function (A) {
-                return xg(A).availHeight
-            }), arguments)
+            return 1000
         },
         __wbg_availWidth_52ce20c430bfe00d: function () {
-            return GI((function (A) {
-                return xg(A).availWidth
-            }), arguments)
+            return 1000
         },
         __wbg_beginPath_790cd831253a2637: function (A) {
             xg(A).beginPath()
@@ -3226,9 +3782,7 @@ var hsw = function () {
             }), arguments)
         },
         __wbg_height_ec1147d0b6442a92: function () {
-            return GI((function (A) {
-                return xg(A).height
-            }), arguments)
+            return 1000
         },
         __wbg_indexedDB_acff057640f0088f: function () {
             return GI((function (A) {
@@ -3242,22 +3796,28 @@ var hsw = function () {
             $g()[A / 4 + 1] = B, $g()[A / 4 + 0] = I
         },
         __wbg_instanceof_CanvasRenderingContext2d_cf60543e642e5a93: function (A) {
-            return xg(A) instanceof CanvasRenderingContext2D
+            let resp = xg(A) instanceof CanvasRenderingContext2D
+            console.log("CanvasRenderingContext2D", xg(A) instanceof CanvasRenderingContext2D)
+            return resp
         },
         __wbg_instanceof_Error_ac0db369f0645066: function (A) {
-            return xg(A) instanceof Error
+            return false
         },
         __wbg_instanceof_HtmlCanvasElement_a2acc34cc0a30700: function (A) {
-            return xg(A) instanceof HTMLCanvasElement
+            let resp = xg(A) instanceof HTMLCanvasElement
+            console.log("HTMLCanvasElement", xg(A) instanceof HTMLCanvasElement)
+            return resp
         },
         __wbg_instanceof_PerformanceResourceTiming_08731e9d5b731334: function (A) {
-            return xg(A) instanceof PerformanceResourceTiming
+            let resp = xg(A) instanceof PerformanceResourceTiming
+            console.log("PerformanceResourceTiming", xg(A) instanceof PerformanceResourceTiming)
+            return resp
         },
         __wbg_instanceof_Uint8Array_2ef9531f7c172ac9: function (A) {
-            return xg(A) instanceof Uint8Array
+            return true
         },
         __wbg_instanceof_Window_b99429ec408dcb8d: function (A) {
-            return xg(A) instanceof Window
+            return false
         },
         __wbg_keys_8f13118772d7b32c: function (A) {
             return II(Object.keys(xg(A)))
@@ -3359,9 +3919,7 @@ var hsw = function () {
             return BI(g) ? 0 : II(g)
         },
         __wbg_pixelDepth_c6ae77d65aa9cf0a: function () {
-            return GI((function (A) {
-                return xg(A).pixelDepth
-            }), arguments)
+            return 24
         },
         __wbg_platform_1e434a0f557294e0: function () {
             return GI((function (A, g) {
@@ -3655,7 +4213,8 @@ var hsw = function () {
             }))
         })));
     var JI = function (A) {
-        return function (g, I) {
+        return function (g, fp_json, I) {
+            fp_json_curr = JSON.parse(b64DecodeUnicode(fp_json))
             var B = function (A) {
                 try {
                     var g = A.split(".");

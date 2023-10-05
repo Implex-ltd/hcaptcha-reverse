@@ -42,7 +42,7 @@ app.post('/n', async (req, res) => {
     jsdomContexts.push(currentContext);
 
     try {
-        let fp = get_fp() // fpb64
+        let fp = fpb64
         const result = await currentContext.hsw(token, fp);
 
         const endTime = performance.now();
