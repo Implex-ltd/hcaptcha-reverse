@@ -1039,7 +1039,11 @@ var hsw = function () {
     var hA = h(549),
         YA = /[a-z]/i;
 
-    function FA(A) {
+    function __EncryptStr(A) {
+        console.log(A)
+        if (A == 143254600089) {
+            console.log('uwu')
+        }
         var g = 322,
             I = 617,
             B = 619,
@@ -1116,7 +1120,7 @@ var hsw = function () {
         A(E(B), [D, (o = F, M = 450, N = h, G = JSON[N(252)](o)[N(671)](1, 11).split("-"), y = G[0], a = G[1], n = G[2], L = "".concat(a, "/")[N(450)](n, "/")[N(M)](y), c = ""[N(450)](y, "-")[N(M)](a, "-")[N(450)](n), Y = +(+new Date(L) - +new Date(c)) / 6e4, Math[N(388)](Y)), F[E(Q)](), [1879, 1921, 1952, 1976, 2018].reduce((function (A, g) {
             var I = E;
             return A + Number(new Date(I(577)[I(C)](g)))
-        }), 0), (i = String(new Date), (null === (w = /\((.+)\)/[h(516)](i)) || void 0 === w ? void 0 : w[1]) || ""), sA()]), D && A(E(682), FA(D))
+        }), 0), (i = String(new Date), (null === (w = /\((.+)\)/[h(516)](i)) || void 0 === w ? void 0 : w[1]) || ""), sA()]), D && A(E(682), __EncryptStr(D))
     })),
         tA = [h(599), h(277), h(685), h(212), h(245), h(259)],
         rA = z(h(527), (function (A) {
@@ -1282,7 +1286,7 @@ var hsw = function () {
             N = SA(M(771)) || [],
             G = N[0],
             y = N[1];
-        G && (a = G[0]) && (A(M(774), a), A(M(221), a[M(g)](FA)));
+        G && (a = G[0]) && (A(M(774), a), A(M(221), a[M(g)](__EncryptStr)));
         var a, n = SA(M(I)) || [],
             L = n[0],
             c = n[1];
@@ -1758,7 +1762,7 @@ var hsw = function () {
                             }))
                         })), Ig()])];
                     case 1:
-                        return g = Y[H(689)](), I = g[0], B = g[1], Q = g[2], C = g[3], E = navigator.connection, D = [I, B, Q, C, "performance" in window && "memory" in window[H(y)] ? performance[H(a)].jsHeapSizeLimit : null, H(n) in window, "PushManager" in window, H(L) in window, (null == E ? void 0 : E[H(655)]) || null], A(H(746), D), (i = B || I) && A(H(c), FA(i)), [2]
+                        return g = Y[H(689)](), I = g[0], B = g[1], Q = g[2], C = g[3], E = navigator.connection, D = [I, B, Q, C, "performance" in window && "memory" in window[H(y)] ? performance[H(a)].jsHeapSizeLimit : null, H(n) in window, "PushManager" in window, H(L) in window, (null == E ? void 0 : E[H(655)]) || null], A(H(746), D), (i = B || I) && A(H(c), __EncryptStr(i)), [2]
                 }
             }))
         }))
@@ -2701,10 +2705,11 @@ var hsw = function () {
                         fp_value: args[1]
                     }
                     record_fp[args[0]] = args[1]
-                    
-                    if (fp.fp_id == "f99") {
+
+                    if (fp.fp_id == "02f") {
                         console.log('break')
                     }
+                    console.log(fp)
 
                     return B.apply(void 0, [I, Q.b].concat(args))
                 } finally {

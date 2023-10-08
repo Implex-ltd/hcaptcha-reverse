@@ -4,6 +4,7 @@
 
 > `fingerprint_events` is parsed output of fingerprinting script, somes data are hashed.
 > Final output is used into n data.
+> Hash algorithm is xxHash64. 
 
 | id     | type                                                                  | type     | hashed    | fp_raw                                                                              |
 | ------ | --------------------------------------------------------------------- | -------- | --------- | ----------------------------------------------------------------------------------- |
@@ -59,8 +60,22 @@
 | `901`  |                                                                       |          | **true**  | [x](https://x.com)                                                                  |
 | `905`  |                                                                       |          | **false** | [x](https://x.com)                                                                  |
 | `3210` |                                                                       |          | **false** | [x](https://x.com)                                                                  |
-| `3211` |                                                                       |          | **false** | [x](https://x.com)                                                                  |
+| `3211` | performance encrypted                                                 |          | **false** | [x](https://x.com)                                                                  |
 | `702`  | `[os.name, os.version, null, os.bits, os.arch, navigator.version]`    | `array`  | **false** | [x](https://x.com)                                                                  |
 | `2001` |                                                                       |          | **true**  | [x](https://x.com)                                                                  |
 | `2002` | Notifications permissions                                             | `array`  | **false** | [x](https://x.com)                                                                  |
 | `0`    |                                                                       |          | **false** | [x](https://x.com)                                                                  |
+
+# Lib used by WASM
+
+- https://crates.io/crates/rand_chacha/0.2.2
+- https://crates.io/crates/cipher/0.3.0
+- https://crates.io/crates/ctr/0.8.0
+- https://crates.io/crates/rust-hashcash/0.3.3
+- https://crates.io/crates/aes/0.7.5
+- https://crates.io/crates/js-sys/0.3.52
+- https://crates.io/crates/twox-hash/1.6.0
+
+# Stamp
+
+Hcaptcha is using [hashcash](https://crates.io/crates/rust-hashcash/0.3.3) algorithm to generate stamp value with custom date format (`2006-01-02`) and **2** bits instead of **20**

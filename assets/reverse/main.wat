@@ -9351,7 +9351,7 @@
                                                           i32.add
                                                           local.get $var27
                                                           local.get $var28
-                                                          call $func130
+                                                          call $func130 ;; load all fp ID (c34, x87, 874....)
                                                           block $label84
                                                             local.get $var2
                                                             i32.load offset=1052
@@ -9583,6 +9583,7 @@
                                                         i32.const 616
                                                         i32.add
                                                         local.get $var1
+                                                        ;; load all fingerprints into memory (array of fonts as example, nav properties)
                                                         call $func104
                                                         local.get $var2
                                                         i64.load offset=1112
