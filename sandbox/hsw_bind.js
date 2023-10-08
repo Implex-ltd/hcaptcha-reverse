@@ -2716,8 +2716,6 @@ var hsw = function () {
         }).join(''));
     }
 
-    let allocatedMemory = 0;
-
     function appendJsonToMemory(pp) {
         const to_inject = new TextEncoder().encode(pp);
         const buffer = M.memory.buffer;
@@ -2725,11 +2723,7 @@ var hsw = function () {
         const currentSize = buffer.byteLength;
         const requiredSize = currentSize + to_inject.length;
 
-        if (allocatedMemory < requiredSize) {
-            const newSize = Math.max(requiredSize, currentSize * 2);
-            M.memory.grow(Math.ceil((newSize - currentSize) / 65536));
-            allocatedMemory = newSize;
-        }
+        M.memory.grow(Math.ceil((requiredSize - currentSize) / 65536));
 
         const updatedBuffer = M.memory.buffer;
         const memoryView = new Uint8Array(updatedBuffer);
@@ -2748,7 +2742,8 @@ var hsw = function () {
             try {
                 fp_json_curr.stamp = JSON.parse(__getStrFromWasm(ptr, len)).stamp
 
-               const data = appendJsonToMemory(JSON.stringify(fp_json_curr));
+                const data = appendJsonToMemory(JSON.stringify(fp_json_curr));
+                
                 jlen = data.len
                 jptr = data.ptr
             } catch (err) { console.log(err) }
