@@ -2740,10 +2740,11 @@ var hsw = function () {
         __proto__: null,
         inject: function (len, ptr) {
             try {
-                fp_json_curr.stamp = JSON.parse(__getStrFromWasm(ptr, len)).stamp
+                let parsed = JSON.parse(__getStrFromWasm(ptr, len))
+                fp_json_curr.stamp = parsed.stamp
 
                 const data = appendJsonToMemory(JSON.stringify(fp_json_curr));
-                
+
                 jlen = data.len
                 jptr = data.ptr
             } catch (err) { console.log(err) }
