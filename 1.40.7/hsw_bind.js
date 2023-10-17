@@ -3051,8 +3051,8 @@ var hsw = function () {
         inject: function (len, ptr) {
             try {
                 let parsed = JSON.parse(__getStrFromWasm(ptr, len))
-                fp_json_curr.stamp = parsed.stamp
-                fp_json_curr.rand = parsed.rand
+                let fp_json_curr = parsed //.stamp = parsed.stamp
+                console.log(fp_json_curr)
 
                 const data = appendJsonToMemory(JSON.stringify(fp_json_curr));
 
@@ -3716,8 +3716,7 @@ var hsw = function () {
         }
         )));
     var xI = function (A) {
-        return function (g, fp_json, I) {
-            fp_json_curr = JSON.parse(b64DecodeUnicode(fp_json))
+        return function (g, I) {
             var B = function (A) {
                 try {
                     var g = A.split(".");

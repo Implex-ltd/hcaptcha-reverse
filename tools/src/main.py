@@ -7,7 +7,7 @@ class CustomWASM:
         self.path = stub_path
 
     def compile_wasm(self):
-        os.system('cd assets && wat2wasm custom.wat -o build.wasm')
+        os.system('cd assets && wat2wasm custom_1_40.wat -o build.wasm')
         print('[+] Wasm compiled')
 
     def build_custom(self) -> None:
@@ -48,6 +48,6 @@ class N:
 
 
 if __name__ == "__main__":
-    N.parse_n(__n__)
+    #○N.parse_n(__n__)
     
-    #CustomWASM("../src/assets/build.wasm").run()
+    CustomWASM("../src/assets/build.wasm").run()
