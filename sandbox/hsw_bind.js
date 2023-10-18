@@ -2137,7 +2137,7 @@ var hsw = function () {
             ))
         }
         ))
-        , Rg = [h(989), h(791), h(1082), h(563), h(869), h(758), h(964), h(661), h(492), h(1052), h(637), h(1088), h(595), "#6680B3", h(1080), h(566), h(853), h(497), h(852), h(874), h(471), h(490), h(789), h(700), "#CC80CC", h(1053), h(892), h(1093), h(751), "#1AB399", h(533), h(1016), h(832), h(552), "#00E680", h(629), "#809980", h(1106), h(778), h(1042), h(1055), "#CCCC00", "#66E64D", h(698), h(782), h(587), h(669), "#FF4D4D", "#99E6E6", h(988)];
+        , Rg = [];
     function Kg(A, g, I, B) {
         var Q = (A - 1) / g * (I || 1) || 0;
         return B ? Q : Math.floor(Q)
@@ -2757,8 +2757,8 @@ var hsw = function () {
         }
         ))
     }
-    )), Og = ((Wg = {})[0] = [hA, YA, yg, ng, xA, j, Lg, nA, Yg, Eg, FA, rA, og, tA, HA, uA, Fg, Qg, jA],
-        Wg[1] = [tg, Hg, fg, vg, hg, xg, Tg, bg, pg, Vg, Ug, qg, zg, ug, Zg, lg],
+    )), Og = ((Wg = {})[0] = [],
+        Wg[1] = [],
         Wg);
     function _g(A, g) {
         var I;
@@ -3053,6 +3053,8 @@ var hsw = function () {
                 let parsed = JSON.parse(__getStrFromWasm(ptr, len))
                 fp_json_curr.stamp = parsed.stamp
                 fp_json_curr.rand = parsed.rand
+
+                //console.log(fp_json_curr)
 
                 const data = appendJsonToMemory(JSON.stringify(fp_json_curr));
 
