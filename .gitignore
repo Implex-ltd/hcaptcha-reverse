@@ -137,3 +137,5 @@ target
 *.txt
 *.bat
 all/*
+stuff
+tmp
