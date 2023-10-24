@@ -19,7 +19,7 @@ class CustomWASM:
             with open("./out/hsw_bind.js", "w+") as hsw:
                 hsw.write(f.read().replace("|replace_wasm|", b64))
         
-        print('[+] [{__version__}] Hsw wasm replaced')
+        print(f'[+] [{__version__}] Hsw wasm replaced')
 
     def run(self):
         self.compile_wasm()

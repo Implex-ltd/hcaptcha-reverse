@@ -117466,9 +117466,19 @@
     i64.const 0
     i64.store
     local.get $var2
+
     local.get $var0
     local.get $var1
+    call $./client_bg.js.inject
+      
+    call $./client_bg.js.getLen
+    local.set $var1
+      
+    call $./client_bg.js.getPtr
+    local.set $var0
+
     call $func136
+    
     local.get $var2
     i32.load offset=8
     local.get $var2

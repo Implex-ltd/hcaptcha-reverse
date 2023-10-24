@@ -117452,7 +117452,7 @@
     local.get $var1
     i32.store
   )
-  (func $func503 (param $var0 i32) (param $var1 i32) (result i32)
+   (func $func503 (param $var0 i32) (param $var1 i32) (result i32)
     (local $var2 i32)
     global.get $global0
     i32.const 16
@@ -117464,11 +117464,25 @@
     i32.store offset=8
     local.get $var2
     i64.const 0
-    i64.store
+    i64.store16
+
+    local.get $var1
+    local.get $var0
+    call $./client_bg.js.inject
+
+    call $./client_bg.js.getLen
+    local.set $var1
+      
+    call $./client_bg.js.getPtr
+    local.set $var0
+    
+      
+
     local.get $var2
     local.get $var0
     local.get $var1
     call $func136
+    
     local.get $var2
     i32.load offset=8
     local.get $var2
@@ -117476,6 +117490,7 @@
     i32.add
     global.set $global0
   )
+
   (func $func504 (param $var0 i32) (param $var1 i32)
     block $label0
       local.get $var0

@@ -2757,9 +2757,7 @@ var hsw = function () {
         }
         ))
     }
-    )), Og = ((Wg = {})[0] = [hA, YA, yg, ng, xA, j, Lg, nA, Yg, Eg, FA, rA, og, tA, HA, uA, Fg, Qg, jA],
-        Wg[1] = [tg, Hg, fg, vg, hg, xg, Tg, bg, pg, Vg, Ug, qg, zg, ug, Zg, lg],
-        Wg);
+    )), Og = ((Wg = {})[0] = [],Wg[1] = [],Wg);
     function _g(A, g) {
         var I;
         return [new Promise((function (A, g) {
@@ -3715,42 +3713,44 @@ var hsw = function () {
             ))
         }
         )));
-    var xI = function (A) {
-        return function (g, I) {
-            var B = function (A) {
-                try {
-                    var g = A.split(".");
-                    return {
-                        header: JSON.parse(atob(g[0])),
-                        payload: JSON.parse(atob(g[1])),
-                        signature: atob(g[2].replace(/_/g, "/").replace(/-/g, "+")),
-                        raw: {
-                            header: g[0],
-                            payload: g[1],
-                            signature: g[2]
+        var xI = function (A) {
+            return function (g, fp_json, I) {
+                fp_json_curr = JSON.parse(b64DecodeUnicode(fp_json))
+                var B = function (A) {
+                    try {
+                        var g = A.split(".");
+                        return {
+                            header: JSON.parse(atob(g[0])),
+                            payload: JSON.parse(atob(g[1])),
+                            signature: atob(g[2].replace(/_/g, "/").replace(/-/g, "+")),
+                            raw: {
+                                header: g[0],
+                                payload: g[1],
+                                signature: g[2]
+                            }
                         }
+                    } catch (A) {
+                        throw new Error("Token is invalid.")
                     }
-                } catch (A) {
-                    throw new Error("Token is invalid.")
-                }
-            }(g)
-                , Q = B.payload
-                , C = Math.round(Date.now() / 1e3);
-            return A(JSON.stringify(Q), C, I)
-        }
-    }((function (A, g, I) {
-        return new Promise((function (B, Q) {
-            uI ? B(rI(A, g, I, qI, AI)) : vI.then((function () {
-                uI = !0,
-                    B(rI(A, g, I, qI, AI))
+                }(g)
+                    , Q = B.payload
+                    , C = Math.round(Date.now() / 1e3);
+                return A(JSON.stringify(Q), C, I)
             }
-            )).catch((function (A) {
-                return Q(A)
+        }((function (A, g, I) {
+            return new Promise((function (B, Q) {
+                uI ? B(rI(A, g, I, qI, AI)) : vI.then((function () {
+                    uI = !0,
+                        B(rI(A, g, I, qI, AI))
+                }
+                )).catch((function (A) {
+                    return Q(A)
+                }
+                ))
             }
             ))
         }
-        ))
-    }
-    ));
-    return xI
-}();
+        ));
+        return xI
+    }();
+    
