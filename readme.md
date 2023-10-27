@@ -83,3 +83,12 @@ Hcaptcha is using [hashcash](https://crates.io/crates/rust-hashcash/0.3.3) algor
 # Fingerprint hash
 
 Hcaptcha is using [xxHash3 (sixty_four.rs)](https://crates.io/crates/twox-hash/1.6.0) algorithm with custom seed (`5575352424011909552`) to create unique hash of somes properties
+
+# Rand
+
+Rand seems to be a kind of "checksum", they are hashing the N data using `crc-32` (`table: 79764919`) and divise it by `2.3283064365386963e-10` to convert the hash to a float.
+First rand is initialised when task is starting (i'm working on), Second one is json payload hash.
+
+# Encryption
+
+Final payload is encrypted using `AES-256-GCM` (`256 bits key`)

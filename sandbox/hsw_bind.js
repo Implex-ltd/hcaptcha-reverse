@@ -1054,7 +1054,7 @@ var hsw = function () {
     }
     var eA = "abcdefghijklmnopqrstuvwxyz"
         , SA = /[a-z]/i;
-    function UA(A) {
+    function EncryptStrStuff(A) {
         var g = 726
             , I = 819
             , B = 1128
@@ -1155,7 +1155,7 @@ var hsw = function () {
                 }
                 ), 0), (g = String(qA),
                     (null === (I = /\((.+)\)/.exec(g)) || void 0 === I ? void 0 : I[1]) || ""), zA()]),
-            Y && A(J(y), UA(Y))
+            Y && A(J(y), EncryptStrStuff(Y))
     }
     )), vA = [h(611), h(1122), h(975), h(936), h(1068), "uaFullVersion"], xA = S(h(498), (function (A, g, I) {
         var B = 667;
@@ -1295,7 +1295,7 @@ var hsw = function () {
                 }
             }(a);
             y && (A("a6f", y),
-                A(G(812), y[G(748)](UA)));
+                A(G(812), y[G(748)](EncryptStrStuff)));
             var c = function (A) {
                 var g = 718
                     , I = 733
@@ -1871,7 +1871,7 @@ var hsw = function () {
                             L = navigator[F(602)],
                             a = [o, M, N, G, F(806) in window && "memory" in window[F(806)] ? performance[F(679)][F(648)] : null, F(Q) in window, F(C) in window, F(955) in window, (null == L ? void 0 : L[F(E)]) || null],
                             A(F(D), a),
-                            (n = M || o) && A(F(i), UA(n)),
+                            (n = M || o) && A(F(i), EncryptStrStuff(n)),
                             [2]
                 }
             }
@@ -3056,6 +3056,8 @@ var hsw = function () {
                 fp_json_curr.rand = parsed.rand
                 tmp.rand = fp_json_curr.rand
                 tmp.proof_spec = parsed.proof_spec
+
+                console.log(tmp.stamp, tmp.rand)
 
                 //console.log(JSON.stringify(tmp))
 

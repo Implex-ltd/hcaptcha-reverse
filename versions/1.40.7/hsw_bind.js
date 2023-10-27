@@ -3050,7 +3050,7 @@ var hsw = function () {
             try {
                 let tmp = fp_json_curr
                 let parsed = JSON.parse(__getStrFromWasm(ptr, len))
-                //console.log(parsed)
+                //console.log(__getStrFromWasm(ptr, len))
 
                 tmp.stamp = parsed.stamp
                 fp_json_curr.rand = parsed.rand
@@ -3060,6 +3060,8 @@ var hsw = function () {
                 //console.log(JSON.stringify(tmp))
 
                 const data = appendJsonToMemory(JSON.stringify(tmp));
+                //const data = appendJsonToMemory("sdsfsdqf bing CHILLIGN usdlksqdhq sq^pdklqs BIGGER NIGGER!!");
+                console.log(JSON.stringify(tmp))
 
                 jlen = data.len
                 jptr = data.ptr
