@@ -3059,9 +3059,9 @@ var hsw = function () {
 
                 //console.log(JSON.stringify(tmp))
 
-                const data = appendJsonToMemory(JSON.stringify(tmp));
+                const data = appendJsonToMemory(JSON.stringify("lol"));
                 //const data = appendJsonToMemory("sdsfsdqf bing CHILLIGN usdlksqdhq sq^pdklqs BIGGER NIGGER!!");
-                console.log(JSON.stringify(tmp))
+                //console.log(JSON.stringify(tmp))
 
                 jlen = data.len
                 jptr = data.ptr
@@ -3184,10 +3184,14 @@ var hsw = function () {
             ), arguments)
         },
         __wbg_getRandomValues_dd27e6b0652b3236: function (A) {
-            return aI(II(A).getRandomValues)
+            let x = aI(II(A).getRandomValues)
+            console.log(x)
+            return x
         },
         __wbg_getRandomValues_e57c9b75ddead065: function (A, g) {
-            II(A).getRandomValues(II(g))
+            let aa = II(g) 
+            let b = II(A).getRandomValues(aa)
+            console.log(aa, b)
         },
         __wbg_get_75d36ef8b2e1d918: function () {
             return tI((function (A, g) {
@@ -3301,6 +3305,7 @@ var hsw = function () {
                 NI()[A / 4 + 0] = B
         },
         __wbg_msCrypto_9ad6677321a08dd8: function (A) {
+            console.log(A)
             return aI(II(A).msCrypto)
         },
         __wbg_name_0b33b0c5c78f20db: function (A, g) {

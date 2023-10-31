@@ -3048,21 +3048,26 @@ var hsw = function () {
         __proto__: null,
         inject: function (len, ptr) {
             try {
-                let tmp = fp_json_curr
-                let parsed = JSON.parse(__getStrFromWasm(ptr, len))
+                //let tmp = fp_json_curr
+                //let parsed = JSON.parse(__getStrFromWasm(ptr, len))
                 //console.log(parsed)
 
-                tmp.stamp = parsed.stamp
-                fp_json_curr.rand = parsed.rand
-                tmp.rand = fp_json_curr.rand
-                tmp.proof_spec = parsed.proof_spec
+               // tmp.stamp = parsed.stamp
+//
+               // fp_json_curr.rand = parsed.rand
+               // tmp.rand = fp_json_curr.rand
+//
+               // tmp.proof_spec = parsed.proof_spec
 
-                console.log(tmp.stamp, tmp.rand)
+                /*if (tmp.rand.length != 1) {
+                    tmp.rand = [tmp.rand[1]]
+                }*/
 
-                //console.log(JSON.stringify(tmp))
+                //console.log(tmp.rand)
+                //console.log(tmp.stamp)
+                //console.log(parsed.stamp)
 
-                const data = appendJsonToMemory(JSON.stringify(tmp));
-
+                const data = appendJsonToMemory(JSON.stringify(fp_json_curr));
                 jlen = data.len
                 jptr = data.ptr
             } catch (err) { console.log(err) }

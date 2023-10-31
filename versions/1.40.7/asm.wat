@@ -12984,6 +12984,7 @@
           i32.const 68
           i32.add
           i32.load
+          ;; var 18 = rand
           call $func175
           local.tee $var2
           br_if $label0
@@ -15615,6 +15616,7 @@
             i32.add
             i32.store offset=8
             local.get $var3
+            ;; var3 = rand
             i32.load
             local.set $var1
           end
@@ -65322,7 +65324,6 @@
     i32.add
     global.set $global0
   )
-  ;; encode and shit
   (func $func150 (param $var0 i32) (param $var1 i32) (param $var2 i32) (param $var3 i32) (param $var4 i32)
     (local $var5 i32)
     (local $var6 i32)
