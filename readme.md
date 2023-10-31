@@ -60,7 +60,7 @@
 | `901`  | All browser voices hash                                                | `u64`     | **true**  | [x](https://x.com)                                                                  |
 | `905`  | Browser voice enabled                                                  | `array`   | **false** | [x](https://x.com)                                                                  |
 | `3210` | `[143254600089,143254600089,null,null,4294705152,true,true,true,null]` | `array`   | **false** | [x](https://x.com)                                                                  |
-| `3211` | performance "encrypted"                                                | `array`   | **false** | [x](https://x.com)                                                                  |
+| `3211` | first arg of performance **3210** "encrypted"                          | `array`   | **false** | [x](https://x.com)                                                                  |
 | `702`  | `[os.name, os.version, null, os.bits, os.arch, navigator.version]`     | `array`   | **false** | [x](https://x.com)                                                                  |
 | `2001` | Permissions hash                                                       | `u64`     | **true**  | [x](https://x.com)                                                                  |
 | `2002` | Notifications permissions                                              | `array`   | **false** | [x](https://x.com)                                                                  |
