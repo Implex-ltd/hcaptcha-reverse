@@ -1,5 +1,41 @@
 # HCaptcha reverse engineer
 
+### String integrity check
+
+[This script](https://gist.github.com/nikolahellatrigger/a8856463170fbe3596569977148ebaf4) is used to "encrypt" somes data into fingerprint_event such as:
+    - webgl vendor + renderer
+    - browser performance
+    - browser timezone
+    
+I think it's used to verify the data is authentic / non duplicated (output is different each time you run the function)
+
+## Lib used by WASM
+
+- https://crates.io/crates/rand_chacha/0.2.2
+- https://crates.io/crates/cipher/0.3.0
+- https://crates.io/crates/ctr/0.8.0
+- https://crates.io/crates/rust-hashcash/0.3.3
+- https://crates.io/crates/aes/0.7.5
+- https://crates.io/crates/js-sys/0.3.52
+- https://crates.io/crates/twox-hash/1.6.0
+
+## Stamp
+
+Hcaptcha is using [hashcash](https://crates.io/crates/rust-hashcash/0.3.3) algorithm to generate stamp value with custom date format (`2006-01-02`), bits is set by using the difficulty present into the JWT 
+
+## Fingerprint hash
+
+Hcaptcha is using [xxHash3 (sixty_four.rs)](https://crates.io/crates/twox-hash/1.6.0) algorithm with custom seed (`5575352424011909552`) to create unique hash of somes properties
+
+## Rand
+
+Rand is a `CRC-32` checksum hash of the N payload in json format, it's used to check the payload integrity if you edited it from memory etc...
+Format: `[math.random, crc-32 * 2.3283064365386963e-10]` (`table: 79764919`)
+
+## Encryption
+
+Final payload is encrypted using `AES-256-GCM` (`256 bits key`)
+
 ## Fingerprint events
 
 > `fingerprint_events` is parsed output of fingerprinting script, somes data are hashed.
@@ -66,38 +102,3 @@
 | `2002` | Notifications permissions                                              | `array`   | **false** | [x](https://x.com)                                                                  |
 | `0`    |                                                                        | `float64` | **false** | [x](https://x.com)                                                                  |
 
-### String integrity check
-
-[This script](https://gist.github.com/nikolahellatrigger/a8856463170fbe3596569977148ebaf4) is used to "encrypt" somes data into fingerprint_event such as:
-    - webgl vendor + renderer
-    - browser performance
-    - browser timezone
-    
-I think it's used to verify the data is authentic / non duplicated (output is different each time you run the function)
-
-## Lib used by WASM
-
-- https://crates.io/crates/rand_chacha/0.2.2
-- https://crates.io/crates/cipher/0.3.0
-- https://crates.io/crates/ctr/0.8.0
-- https://crates.io/crates/rust-hashcash/0.3.3
-- https://crates.io/crates/aes/0.7.5
-- https://crates.io/crates/js-sys/0.3.52
-- https://crates.io/crates/twox-hash/1.6.0
-
-## Stamp
-
-Hcaptcha is using [hashcash](https://crates.io/crates/rust-hashcash/0.3.3) algorithm to generate stamp value with custom date format (`2006-01-02`), bits is set by using the difficulty present into the JWT 
-
-## Fingerprint hash
-
-Hcaptcha is using [xxHash3 (sixty_four.rs)](https://crates.io/crates/twox-hash/1.6.0) algorithm with custom seed (`5575352424011909552`) to create unique hash of somes properties
-
-## Rand
-
-Rand is a `CRC-32` checksum hash of the N payload in json format, it's used to check the payload integrity if you edited it from memory etc...
-Format: `[math.random, crc-32 * 2.3283064365386963e-10]` (`table: 79764919`)
-
-## Encryption
-
-Final payload is encrypted using `AES-256-GCM` (`256 bits key`)
