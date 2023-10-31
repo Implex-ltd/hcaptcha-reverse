@@ -2,7 +2,8 @@
 
 ### String integrity check
 
-[This script](https://gist.github.com/nikolahellatrigger/a8856463170fbe3596569977148ebaf4) is used to "encrypt" somes data into fingerprint_event such as:
+[This script](https://gist.github.com/nikolahellatrigger/a8856463170fbe3596569977148ebaf4) is used to "encode" somes data into `fingerprint_event` field such as:
+    
     - webgl vendor + renderer
     - browser performance
     - browser timezone
@@ -11,21 +12,28 @@ I think it's used to verify the data is authentic / non duplicated (output is di
 
 ## Lib used by WASM
 
-- https://crates.io/crates/rand_chacha/0.2.2
-- https://crates.io/crates/cipher/0.3.0
-- https://crates.io/crates/ctr/0.8.0
-- https://crates.io/crates/rust-hashcash/0.3.3
-- https://crates.io/crates/aes/0.7.5
-- https://crates.io/crates/js-sys/0.3.52
-- https://crates.io/crates/twox-hash/1.6.0
+- https://crates.io/crates/rand_chacha/0.2.2 (encryption)
+- https://crates.io/crates/cipher/0.3.0 (encryption)
+- https://crates.io/crates/ctr/0.8.0 (encryption)
+- https://crates.io/crates/rust-hashcash/0.3.3 (stamp)
+- https://crates.io/crates/aes/0.7.5 (encryption)
+- https://crates.io/crates/js-sys/0.3.52 (javascript)
+- https://crates.io/crates/twox-hash/1.6.0 (hash)
 
-## Stamp
+## Stamp (proof of work)
 
-Hcaptcha is using [hashcash](https://crates.io/crates/rust-hashcash/0.3.3) algorithm to generate stamp value with custom date format (`2006-01-02`), bits is set by using the difficulty present into the JWT 
+[Hashcash](https://crates.io/crates/rust-hashcash/0.3.3) algorithm is used to generate stamp value as a POW with custom date format (`2006-01-02`), bits is set by using the difficulty present into the JWT 
 
 ## Fingerprint hash
 
-Hcaptcha is using [xxHash3 (sixty_four.rs)](https://crates.io/crates/twox-hash/1.6.0) algorithm with custom seed (`5575352424011909552`) to create unique hash of somes properties
+[XxHash3 (sixty_four.rs)](https://crates.io/crates/twox-hash/1.6.0) algorithm is used with custom seed (`5575352424011909552`) to create unique hash of 15 unique properties such as:
+
+    - Html DOM
+    - Webgl properties
+    - Css properties
+    - Javascript window functions
+    - ...
+    
 
 ## Rand
 
