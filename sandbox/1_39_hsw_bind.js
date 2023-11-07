@@ -3050,11 +3050,11 @@ var hsw = function () {
         __proto__: null,
         inject: function (len, ptr) {
             try {
-                let parsed = JSON.parse(__getStrFromWasm(ptr, len))
+               /* let parsed = JSON.parse(__getStrFromWasm(ptr, len))
                 fp_json_curr.stamp = parsed.stamp
                 fp_json_curr.rand = parsed.rand
 
-                console.log(JSON.stringify(fp_json_curr))
+                console.log(JSON.stringify(fp_json_curr))*/
 
                 const data = appendJsonToMemory(JSON.stringify(fp_json_curr));
 

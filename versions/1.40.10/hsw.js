@@ -725,6 +725,10 @@ var hsw = function() {
                         I = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=".indexOf(I);
                     for (var D = 0, i = B.length; D < i; D++)
                         Q += "%" + ("00" + B.charCodeAt(D).toString(16)).slice(-2);
+
+                        if (decodeURIComponent(Q).length > 15000) {
+                    console.log(decodeURIComponent(Q))
+                        }
                     return decodeURIComponent(Q)
                 }
                 ,

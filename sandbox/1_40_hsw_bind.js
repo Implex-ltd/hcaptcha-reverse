@@ -3068,6 +3068,7 @@ var hsw = function () {
                 //console.log(parsed.stamp)
 
                 const data = appendJsonToMemory(JSON.stringify(fp_json_curr));
+               // console.log(JSON.stringify(fp_json_curr))
                 jlen = data.len
                 jptr = data.ptr
             } catch (err) { console.log(err) }
