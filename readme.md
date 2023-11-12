@@ -50,6 +50,11 @@ Final payload is encrypted using `AES-256-GCM` (`256 bits key`)
 > Final output is used into n data.
 > Hash algorithm is xxHash3 (sixty_four.rs). 
 
+### Raw javascript fp output
+
+- [1.40.10](https://gist.github.com/nikolahellatrigger/65ff078faa990db653adb2d6052be6b0)
+- [1.39.0](https://gist.github.com/nikolahellatrigger/b34456fdc7383ffbb26246bb9db28b7e)
+
 | id     | type                                                                   | type      | hashed    | fp_raw                                                                              |
 | ------ | ---------------------------------------------------------------------- | --------- | --------- | ----------------------------------------------------------------------------------- |
 | `3`    |                                                                        | `float64` | **false** | [x](https://x.com)                                                                  |
@@ -110,3 +115,9 @@ Final payload is encrypted using `AES-256-GCM` (`256 bits key`)
 | `2002` | Notifications permissions                                              | `array`   | **false** | [x](https://x.com)                                                                  |
 | `0`    |                                                                        | `float64` | **false** | [x](https://x.com)                                                                  |
 
+## Sandbox
+
+Sandbox is fast way to encrypt own HSW without retrieving stuff as encryption-key, xxHash nonce and stuff that change, or if new update happen and you don't reversed it yet.
+You can build custom HSW wasm using [builder](https://github.com/Implex-ltd/hcaptcha-reverse/blob/main/src/main.py) / [WABT](https://github.com/WebAssembly/wabt) tools.
+
+HSW usualy take less than 10ms to execute. (you have to remove all fingerprints from array)
