@@ -1,6 +1,11 @@
 # HCaptcha reverse engineer
 
-### String integrity check
+```
+this repo (and more generally all those linked to implex) are the result of countless hours of work, a lot of learning and new things.
+Take the time to look and learn, instead of copying without thinking, because it won't work. If you need a developer, contact me.
+```
+
+## String integrity check
 
 [This script](https://gist.github.com/nikolahellatrigger/a8856463170fbe3596569977148ebaf4) is used to "encode" somes data into `fingerprint_event` field such as:
     
