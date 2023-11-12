@@ -2757,7 +2757,7 @@ var hsw = function () {
         }
         ))
     }
-    )), Og = ((Wg = {})[0] = [],Wg[1] = [],Wg);
+    )), Og = ((Wg = {})[0] = [], Wg[1] = [], Wg);
     function _g(A, g) {
         var I;
         return [new Promise((function (A, g) {
@@ -3048,16 +3048,16 @@ var hsw = function () {
         __proto__: null,
         inject: function (len, ptr) {
             try {
-                //let tmp = fp_json_curr
-                //let parsed = JSON.parse(__getStrFromWasm(ptr, len))
+                let tmp = fp_json_curr
+                let parsed = JSON.parse(__getStrFromWasm(ptr, len))
                 //console.log(parsed)
 
-               // tmp.stamp = parsed.stamp
-//
-               // fp_json_curr.rand = parsed.rand
-               // tmp.rand = fp_json_curr.rand
-//
-               // tmp.proof_spec = parsed.proof_spec
+                tmp.stamp = parsed.stamp
+
+                fp_json_curr.rand = parsed.rand
+                tmp.rand = fp_json_curr.rand
+
+                tmp.proof_spec = parsed.proof_spec
 
                 /*if (tmp.rand.length != 1) {
                     tmp.rand = [tmp.rand[1]]
@@ -3067,8 +3067,8 @@ var hsw = function () {
                 //console.log(tmp.stamp)
                 //console.log(parsed.stamp)
 
-                const data = appendJsonToMemory(JSON.stringify(fp_json_curr));
-               // console.log(JSON.stringify(fp_json_curr))
+                const data = appendJsonToMemory(JSON.stringify(tmp));
+                console.log(JSON.stringify(tmp))
                 jlen = data.len
                 jptr = data.ptr
             } catch (err) { console.log(err) }

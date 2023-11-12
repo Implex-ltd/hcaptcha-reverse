@@ -10,7 +10,7 @@ app.use(express.json());
 const NUM_CONTEXTS = 5;
 const jsdomContexts = [];
 
-const hswBindScript = fs.readFileSync(__dirname + "/1_39_hsw_bind.js", "utf-8");
+const hswBindScript = fs.readFileSync(__dirname + "/1_40_hsw_bind.js", "utf-8");
 
 for (let i = 0; i < NUM_CONTEXTS; i++) {
     const { window } = new JSDOM(``, {
