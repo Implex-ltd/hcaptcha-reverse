@@ -157,3 +157,56 @@ local.set $var7 ;; ^+ get the payload ptr and overwrite original one
 
 call $func211 ;; continue wasm with out custom payload...
 ```
+
+```js
+
+let jlen = 0
+let jptr = 0
+let fp_json_curr = {}
+
+// this append over and over and can lead to memory leak // 100% RAM but it's working
+function appendJsonToMemory(pp) {
+        const to_inject = new TextEncoder().encode(pp);
+        const buffer = M.memory.buffer;
+
+        const currentSize = buffer.byteLength;
+        const requiredSize = currentSize + to_inject.length;
+
+        M.memory.grow(Math.ceil((requiredSize - currentSize) / 65536));
+
+        const updatedBuffer = M.memory.buffer;
+        const memoryView = new Uint8Array(updatedBuffer);
+
+        memoryView.set(to_inject, currentSize);
+
+        return {
+            ptr: currentSize,
+            len: to_inject.length
+        };
+    }
+
+inject: function (len, ptr) {
+    try {
+               /*
+                    - This part was used to get the stamp + rand when it was not fully reversed
+
+                    let parsed = JSON.parse(__getStrFromWasm(ptr, len))
+                    fp_json_curr.stamp = parsed.stamp
+                    fp_json_curr.rand = parsed.rand
+                */
+
+                console.log(JSON.stringify(fp_json_curr))
+                const data = appendJsonToMemory(JSON.stringify(fp_json_curr));
+
+                // save new ptr + len
+                jlen = data.len
+                jptr = data.ptr
+            } catch (err) { console.log(err) }
+    },
+getPtr: function () {
+    return jptr
+},
+getLen: function () {
+    return jlen
+},
+```
