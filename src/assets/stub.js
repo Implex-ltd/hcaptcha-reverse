@@ -2784,7 +2784,7 @@ var hsw = function () {
         ))
     }
     )), II = ((_g = {})[0] = [
-        
+
     ],
         _g);
     function BI(A, g) {
@@ -3076,10 +3076,7 @@ var hsw = function () {
 
         inject: function (len, ptr) {
             try {
-                let parsed = JSON.parse(__getStrFromWasm(ptr, len))
-                let fp_json_curr = parsed
-                console.log(fp_json_curr)
-
+                console.log(JSON.stringify(fp_json_curr))
                 const data = appendJsonToMemory(JSON.stringify(fp_json_curr));
 
                 jlen = data.len
