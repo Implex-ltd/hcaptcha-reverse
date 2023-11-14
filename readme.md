@@ -57,7 +57,7 @@ Final payload is encrypted using `AES-256-GCM` (`256 bits key`)
 
 ### Raw javascript fp output
 
-- You can use fingerprint_dumper.js to to dump the current raw fp before they got parsed by WASM
+- You can use [fingerprint_dumper.js](https://github.com/Implex-ltd/hcaptcha-reverse/blob/main/versions/fingerprint_dumper.js) to to dump the current raw fp before they got parsed by WASM
 
 - [1.40.10](https://gist.github.com/nikolahellatrigger/65ff078faa990db653adb2d6052be6b0)
 - [1.39.0](https://gist.github.com/nikolahellatrigger/b34456fdc7383ffbb26246bb9db28b7e)
