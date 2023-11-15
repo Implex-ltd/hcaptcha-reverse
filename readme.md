@@ -5,6 +5,10 @@ this repo (and more generally all those linked to implex) are the result of coun
 Take the time to look and learn, instead of copying without thinking, because it won't work. If you need a developer, contact me.
 ```
 
+## Hcaptcha 1.40.16 !
+
+They added "obfuscation" to the wasm, but hey!
+
 ## String integrity check
 
 [This script](https://gist.github.com/nikolahellatrigger/a8856463170fbe3596569977148ebaf4) is used to "encode" somes data into `fingerprint_event` field such as:

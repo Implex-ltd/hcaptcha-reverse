@@ -1,6 +1,7 @@
 /**
  * Dump all collected fingerprints events before they got hashed or sum
- */
+ * Events: 1.40.15
+*/
 
 var hsw = function () {
     "use strict";
