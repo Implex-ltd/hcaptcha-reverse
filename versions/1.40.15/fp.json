@@ -1,0 +1,299 @@
+{
+    "proof_spec": {
+        "difficulty": 2,
+        "fingerprint_type": 0,
+        "_type": "w",
+        "data": "Pc1rAvef494YpzYEuts8vVEEkSfAXnFg89j1KJU29dkTv7TIp84OyYOuIpyuOua/nlEtWHVXnRLyKeSZfzhe+sN7T2mEXKIfovpZPJPbvH0lneb/t8yiOmfxqMDO2prCopVuSo3f/mCWND2ibmRm8LTR0JmZUC7PrCCA+Ab7DaUAKLY4sFuOnnoxvw==7tqJ0uhG8Afm4TJs",
+        "_location": "https://newassets.hcaptcha.com/c/0f70ce6",
+        "timeout_value": 1000.0
+    },
+    "rand": [
+        0.6194678201927002
+    ],
+    "components": {
+        "version": "1.40.15/0f70ce6",
+        "navigator": {
+            "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+            "language": "fr-FR",
+            "languages": [
+                "fr-FR",
+                "fr",
+                "en-US",
+                "en"
+            ],
+            "platform": "Win32",
+            "max_touch_points": 0,
+            "webdriver": false,
+            "notification_query_permission": null,
+            "plugins_undefined": false
+        },
+        "screen": {
+            "color_depth": 24,
+            "pixel_depth": 24,
+            "width": 3440,
+            "height": 1440,
+            "avail_width": 3440,
+            "avail_height": 1392
+        },
+        "device_pixel_ratio": 1.0,
+        "has_session_storage": true,
+        "has_local_storage": true,
+        "has_indexed_db": true,
+        "web_gl_hash": "-1",
+        "canvas_hash": "9373501784251927131",
+        "has_touch": false,
+        "notification_api_permission": "Denied",
+        "chrome": true,
+        "to_string_length": 33,
+        "err_firefox": null,
+        "r_bot_score": 0,
+        "r_bot_score_suspicious_keys": [],
+        "r_bot_score_2": 0,
+        "audio_hash": "-1",
+        "extensions": [
+            false
+        ],
+        "parent_win_hash": "66559431727362466",
+        "webrtc_hash": "-1",
+        "performance_hash": "4140103483592612201",
+        "unique_keys": "0,hcaptcha,addEventHandler,onSuccess,grecaptcha,copyText,onExpire,1,b",
+        "inv_unique_keys": "hsw,image_label_binary,__wdata,_sharedLibs",
+        "common_keys_hash": 4068231430,
+        "common_keys_tail": "webkitCancelAnimationFrame,webkitRequestAnimationFrame,chrome,fence,caches,cookieStore,ondevicemotion,ondeviceorientation,ondeviceorientationabsolute,launchQueue,sharedStorage,documentPictureInPicture,onbeforematch,getScreenDetails,queryLocalFonts,showDirectoryPicker,showOpenFilePicker,showSaveFilePicker,originAgentCluster,credentialless,speechSynthesis,oncontentvisibilityautostatechange,onscrollend,webkitRequestFileSystem,webkitResolveLocalFileSystemURL,Raven",
+        "features": {
+            "performance_entries": true,
+            "web_audio": true,
+            "web_rtc": true,
+            "canvas_2d": true,
+            "fetch": true
+        }
+    },
+    "fingerprint_events": [
+        [
+            3,
+            "6999.199999999255"
+        ],
+        [
+            1902,
+            "57"
+        ],
+        [
+            1901,
+            "15307345790125003576"
+        ],
+        [
+            1101,
+            "8398791803026140725"
+        ],
+        [
+            1103,
+            "4932383211497360507"
+        ],
+        [
+            1105,
+            "17157476241021694346"
+        ],
+        [
+            201,
+            "8915205951503093450"
+        ],
+        [
+            1107,
+            "[[119,[119,119,119,255,119,119,119,255,119,119,119,255,119,119,119,255]],[[11,0,0,95.96875,15,4,96.765625],[[12,0,-1,113.125,17,4,113],[11,0,0,111,12,4,111],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[12,0,0,109.640625,14,3,110.1953125]]],[0,2,8,13,15,17,24,26,27,28,29,30,31,32,34,37,39,40,49,69,75,76,79,80],[0,0,0,0,14,3,0]]"
+        ],
+        [
+            211,
+            "[-6.172840118408203,-20.710678100585938,120.71067810058594,-20.710678100585938,141.42135620117188,120.71067810058594,-20.710678100585938,141.42135620117188,-20.710678100585938,-20.710678100585938,0,0,400,600,true]"
+        ],
+        [
+            3401,
+            "14582940537062521554"
+        ],
+        [
+            3403,
+            "[[[\"https://newassets.hcaptcha.com/captcha/v1/3073b34/hcaptcha.js\",0,5]],[[\"*\",84,9]]]"
+        ],
+        [
+            803,
+            "[1,4,5,7,9,12,20,21,24,25,29,31]"
+        ],
+        [
+            604,
+            "[\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\",\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\",8,16,\"fr-FR\",[\"fr-FR\",\"fr\",\"en-US\",\"en\"],\"Win32\",null,[\"Google Chrome 119\",\"Chromium 119\",\"Not?A_Brand 24\"],false,\"Windows\",2,5,true,false,0,false,false,true,\"[object Keyboard]\",false,false]"
+        ],
+        [
+            2801,
+            "4631229088072584217"
+        ],
+        [
+            2805,
+            "[[277114314453,277114314460,277114314451,357114314456,277114314452,554228628898,57114314443,717114314371391,554228628897,277114314456,1108457257862,277114314450,554228628919,277114314460,277114314451],false]"
+        ],
+        [
+            107,
+            "[3440,1440,3440,1392,24,24,false,0,1,1918,1399,true,true,true,false]"
+        ],
+        [
+            301,
+            "8383473043360077444"
+        ],
+        [
+            304,
+            "623"
+        ],
+        [
+            1401,
+            "\"Europe/Paris\""
+        ],
+        [
+            1402,
+            "[\"Europe/Paris\",-60,-60,-3203647761000,\"heure normale d’Europe centrale\",\"fr\"]"
+        ],
+        [
+            1403,
+            "[\"jPxYWzKmleebjRhz=Alz\",\"b\",\"4\",\"EHKMWQWPZCXZI\"]"
+        ],
+        [
+            3504,
+            "1699995213858.3"
+        ],
+        [
+            3501,
+            "[[\"img:imgs.hcaptcha.com\",0,64.55000000074506],[\"navigation:newassets.hcaptcha.com\",0.09999999962747097,3.900000000372529],[\"script:newassets.hcaptcha.com\",0.19999999925494194,6],[\"xmlhttprequest:api.hcaptcha.com\",0,159.94999999925494]]"
+        ],
+        [
+            3503,
+            "0.19999999925494194"
+        ],
+        [
+            3502,
+            "58.950000000186265"
+        ],
+        [
+            401,
+            "3037524253531268289"
+        ],
+        [
+            402,
+            "1116"
+        ],
+        [
+            407,
+            "[[\"loadTimes\",\"csi\",\"app\"],35,34,null,false,false,true,37,true,true,true,true,true,[\"Raven\",\"_sharedLibs\",\"hsw\",\"__wdata\",\"image_label_binary\"],[[\"getElementsByClassName\",[]],[\"getElementById\",[]],[\"querySelector\",[]],[\"querySelectorAll\",[]]],[],true]"
+        ],
+        [
+            412,
+            "9345374751420407194"
+        ],
+        [
+            2408,
+            "true"
+        ],
+        [
+            2402,
+            "[\"Google Inc. (NVIDIA)\",\"ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 Ti (0x00002489) Direct3D11 vs_5_0 ps_5_0, D3D11)\"]"
+        ],
+        [
+            2420,
+            "[[\"wItjlN3crbXaoILWNHUtfLCMyUstydml\",\"4\",\"14\",\"VZGLZHSBFETEJ\"],[\"UCUlBJMlMDM2aDMYUITQrFMYUYQHj0AulxywiTjkjvrAv0vwiTjOOKUFpvrxnKMlaJMlclSDHUQ=O1MAFTMpaJMlw2bfvzxwMKMlaJMli3bfvzxwaJMlOvZuFWewnJWXEDMYUCkwQhMwaDMYQDo5KCMY\",\"16\",\"4d\",\"HIOXYVRYAJRNK\"]]"
+        ],
+        [
+            2401,
+            "14346320745974646026"
+        ],
+        [
+            2407,
+            "13177607191192652685"
+        ],
+        [
+            2409,
+            "[2147483647,2147483647,4294967294]"
+        ],
+        [
+            2410,
+            "[16,1024,4096,7,12,120,[23,127,127]]"
+        ],
+        [
+            2411,
+            "[32767,32767,16384,8,8,8]"
+        ],
+        [
+            2412,
+            "[1,1024,1,1,4]"
+        ],
+        [
+            2413,
+            "[2147483647,2147483647,2147483647,2147483647]"
+        ],
+        [
+            2414,
+            "[16384,32,16384,2048,2,2048]"
+        ],
+        [
+            2415,
+            "[4,120,4]"
+        ],
+        [
+            2416,
+            "[24,24,65536,212988,200704]"
+        ],
+        [
+            2417,
+            "[16,4095,30,16,16380,120,12,120,[23,127,127]]"
+        ],
+        [
+            901,
+            "16132118391739044799"
+        ],
+        [
+            905,
+            "[[true,\"fr-FR\",true,\"Microsoft Hortense - French (France)\",\"Microsoft Hortense - French (France)\"],[false,\"fr-FR\",true,\"Microsoft Julie - French (France)\",\"Microsoft Julie - French (France)\"],[false,\"fr-FR\",true,\"Microsoft Paul - French (France)\",\"Microsoft Paul - French (France)\"]]"
+        ],
+        [
+            1302,
+            "[0,1,2,3,4]"
+        ],
+        [
+            1904,
+            "[-73.08170310701956,14139,15877]"
+        ],
+        [
+            702,
+            "[\"Windows\",\"15.0.0\",null,\"64\",\"x86\",\"119.0.6045.124\"]"
+        ],
+        [
+            3210,
+            "[143557811404,143557811404,null,null,4294705152,true,true,true,null]"
+        ],
+        [
+            3211,
+            "[\"DNXQZM1uZN4EtM0A\",\"15\",\"e\",\"LLHXGJRTLZJFU\"]"
+        ],
+        [
+            0,
+            "43"
+        ]
+    ],
+    "messages": null,
+    "stack_data": null,
+    "fingerprint_suspicious_events": [],
+    "stamp": "1:2:2023-11-14:Pc1rAvef494YpzYEuts8vVEEkSfAXnFg89j1KJU29dkTv7TIp84OyYOuIpyuOua/nlEtWHVXnRLyKeSZfzhe+sN7T2mEXKIfovpZPJPbvH0lneb/t8yiOmfxqMDO2prCopVuSo3f/mCWND2ibmRm8LTR0JmZUC7PrCCA+Ab7DaUAKLY4sFuOnnoxvw==7tqJ0uhG8Afm4TJs::wMP9qqFg:0",
+    "href": "https://accounts.hcaptcha.com/demo",
+    "errs": {
+        "list": []
+    },
+    "perf": [
+        [
+            1,
+            8.0
+        ],
+        [
+            2,
+            49.0
+        ],
+        [
+            3,
+            0.0
+        ]
+    ]
+}

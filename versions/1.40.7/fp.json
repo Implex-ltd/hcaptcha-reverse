@@ -1,0 +1,301 @@
+{
+    "proof_spec": {
+        "difficulty": 2,
+        "fingerprint_type": 0,
+        "_type": "w",
+        "data": "kqe4FNdJljhUlEQLQQh/wvbS+AcvP/vwN48Svz/fFD8/8F7Ep4qx2npEjQ5+VPMBuUP4Uf4VAMRF5VVg6QN9LxswUwhO19WKGP21I3JHeESXXu90NSffiY4PnQMfVl4tov03xIY7iknAaCPwX2nRyUV1DkK8lW2tv8Og2jv1EdrP6g4kiXAGq2nigw==5AiLYffpDA0DV7Av",
+        "_location": "https://newassets.hcaptcha.com/c/78ee6fc",
+        "timeout_value": 1000.0
+    },
+    "rand": [
+        0.31347383871075185
+    ],
+    "components": {
+        "version": "1.40.7/78ee6fc",
+        "navigator": {
+            "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+            "language": "fr-FR",
+            "languages": [
+                "fr-FR",
+                "fr",
+                "en-US",
+                "en"
+            ],
+            "platform": "Win32",
+            "max_touch_points": 0,
+            "webdriver": false,
+            "notification_query_permission": null,
+            "plugins_undefined": false
+        },
+        "screen": {
+            "color_depth": 24,
+            "pixel_depth": 24,
+            "width": 3440,
+            "height": 1440,
+            "avail_width": 3440,
+            "avail_height": 1392
+        },
+        "device_pixel_ratio": 1.0,
+        "has_session_storage": true,
+        "has_local_storage": true,
+        "has_indexed_db": true,
+        "web_gl_hash": "-1",
+        "canvas_hash": "9373501784251927131",
+        "has_touch": false,
+        "notification_api_permission": "Default",
+        "chrome": true,
+        "to_string_length": 33,
+        "err_firefox": null,
+        "r_bot_score": 0,
+        "r_bot_score_suspicious_keys": [],
+        "r_bot_score_2": 0,
+        "audio_hash": "-1",
+        "extensions": [
+            false
+        ],
+        "parent_win_hash": null,
+        "webrtc_hash": "-1",
+        "performance_hash": "4421725415906121346",
+        "unique_keys": null,
+        "inv_unique_keys": null,
+        "features": {
+            "performance_entries": true,
+            "web_audio": true,
+            "web_rtc": true,
+            "canvas_2d": true,
+            "fetch": true
+        }
+    },
+    "fingerprint_events": [
+        [
+            3,
+            "277791.6999999881"
+        ],
+        [
+            1902,
+            "57"
+        ],
+        [
+            1901,
+            "15307345790125003576"
+        ],
+        [
+            1101,
+            "8398791803026140725"
+        ],
+        [
+            1103,
+            "4932383211497360507"
+        ],
+        [
+            1105,
+            "17157476241021694346"
+        ],
+        [
+            201,
+            "8915205951503093450"
+        ],
+        [
+            1107,
+            "[[83,[83,83,83,255,83,83,83,255,83,83,83,255,83,83,83,255]],[[11,0,0,95.96875,15,4,96.765625],[[12,0,-1,113.125,17,4,113],[11,0,0,111,12,4,111],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[12,0,0,109.640625,14,3,110.1953125]]],[0,2,8,13,15,17,24,26,27,28,29,30,31,32,34,37,39,40,49,69,75,76,79,80],[0,0,0,0,14,3,0]]"
+        ],
+        [
+            211,
+            "[-6.172840118408203,-20.710678100585938,120.71067810058594,-20.710678100585938,141.42135620117188,120.71067810058594,-20.710678100585938,141.42135620117188,-20.710678100585938,-20.710678100585938,0,0,270,21,true]"
+        ],
+        [
+            3401,
+            "6186582031941077595"
+        ],
+        [
+            3403,
+            "[[[\"\",1107,0],[\"http://127.0.0.1:5500/1.40.7/hsw.js\",0,1],[\"\",1437,0]],[]]"
+        ],
+        [
+            803,
+            "[1,4,5,7,9,12,20,21,24,25,29,31]"
+        ],
+        [
+            604,
+            "[\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36\",\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36\",8,16,\"fr-FR\",[\"fr-FR\",\"fr\",\"en-US\",\"en\"],\"Win32\",null,[\"Chromium 118\",\"Google Chrome 118\",\"Not=A?Brand 99\"],false,\"Windows\",2,5,true,false,0,false,false,true,\"[object Keyboard]\",false,false]"
+        ],
+        [
+            2801,
+            "4631229088072584217"
+        ],
+        [
+            2805,
+            "[[277114314453,277114314460,277114314451,357114314456,277114314452,554228628898,57114314443,717114314371391,554228628897,277114314456,1108457257862,277114314450,554228628919,277114314460,277114314451],false]"
+        ],
+        [
+            107,
+            "[3440,1440,3440,1392,24,24,false,0,1,1774,1399,true,true,true,false]"
+        ],
+        [
+            301,
+            "8383473043360077444"
+        ],
+        [
+            304,
+            "623"
+        ],
+        [
+            1401,
+            "\"Europe/Paris\""
+        ],
+        [
+            1402,
+            "[\"Europe/Paris\",-60,-60,-3203647761000,\"heure normale d’Europe centrale\",\"fr\"]"
+        ],
+        [
+            1403,
+            "[\"edX52bKZKMl8KEXHmc=q\",\"19\",\"2\",\"RTVHYQEKISFXR\"]"
+        ],
+        [
+            3504,
+            "1697577594633.5"
+        ],
+        [
+            3501,
+            "[[\"navigation:127.0.0.1:5500\",1.5999999940395355,3.800000011920929],[\"script:127.0.0.1:5500\",0.7999999821186066,7.800000011920929]]"
+        ],
+        [
+            3503,
+            "1.199999988079071"
+        ],
+        [
+            3502,
+            "5.800000011920929"
+        ],
+        [
+            401,
+            "1018540705110257257"
+        ],
+        [
+            402,
+            "1117"
+        ],
+        [
+            407,
+            "[[\"loadTimes\",\"csi\",\"app\"],35,34,null,false,false,true,37,true,true,true,true,true,[\"run_hsw\",\"hsw\"],[],[],true]"
+        ],
+        [
+            412,
+            "15584660433093862032"
+        ],
+        [
+            2408,
+            "true"
+        ],
+        [
+            2402,
+            "[\"Google Inc. (NVIDIA)\",\"ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 Ti (0x00002489) Direct3D11 vs_5_0 ps_5_0, D3D11)\"]"
+        ],
+        [
+            2420,
+            "[[\"RSFMLwITJF1Wblp2YowevHJ0RzlCmyuy\",\"18\",\"f\",\"UVMZKUDSXEUKZ\"],[\"0B4twA6NjSxEDMyUcKWqgMWaDMyqDo5kcMyUiwvbjMlMDM2aDMyUcwAREMyUSTrxUd4l2AWITJUJ0TK90RWITJOqlqPp0ThNkMlajMlCEVNJ1S=O0MKfTMpajMlYXeFVZXWMkMlajMlIweFVZXWajMlO\",\"6\",\"2a\",\"CFBOHGCAWZQAB\"]]"
+        ],
+        [
+            2401,
+            "671308342765569167"
+        ],
+        [
+            2407,
+            "13177607191192652685"
+        ],
+        [
+            2409,
+            "[2147483647,2147483647,4294967294]"
+        ],
+        [
+            2410,
+            "[16,1024,4096,7,12,120,[23,127,127]]"
+        ],
+        [
+            2411,
+            "[32767,32767,16384,8,8,8]"
+        ],
+        [
+            2412,
+            "[1,1024,1,1,4]"
+        ],
+        [
+            2413,
+            "[2147483647,2147483647,2147483647,2147483647]"
+        ],
+        [
+            2414,
+            "[16384,32,16384,2048,2,2048]"
+        ],
+        [
+            2415,
+            "[4,120,4]"
+        ],
+        [
+            2416,
+            "[24,24,65536,212988,200704]"
+        ],
+        [
+            2417,
+            "[16,4095,30,16,16380,120,12,120,[23,127,127]]"
+        ],
+        [
+            3800,
+            "\"Error: CSP\""
+        ],
+        [
+            1302,
+            "[0,1,2,3,4]"
+        ],
+        [
+            1904,
+            "[0,11412,11412]"
+        ],
+        [
+            901,
+            "16132118391739044799"
+        ],
+        [
+            905,
+            "[[true,\"fr-FR\",true,\"Microsoft Hortense - French (France)\",\"Microsoft Hortense - French (France)\"],[false,\"fr-FR\",true,\"Microsoft Julie - French (France)\",\"Microsoft Julie - French (France)\"],[false,\"fr-FR\",true,\"Microsoft Paul - French (France)\",\"Microsoft Paul - French (France)\"]]"
+        ],
+        [
+            702,
+            "[\"Windows\",\"15.0.0\",null,\"64\",\"x86\",\"118.0.5993.71\"]"
+        ],
+        [
+            3210,
+            "[143254600089,143254600089,null,null,4294705152,true,true,true,null]"
+        ],
+        [
+            3211,
+            "[\"WgTOXqzMYuDN2ADM\",\"13\",\"c\",\"WPXLSYXYUBFKQ\"]"
+        ],
+        [
+            0,
+            "36.19999998807907"
+        ]
+    ],
+    "messages": null,
+    "stack_data": null,
+    "fingerprint_suspicious_events": [],
+    "stamp": "1:2:2023-10-17:kqe4FNdJljhUlEQLQQh/wvbS+AcvP/vwN48Svz/fFD8/8F7Ep4qx2npEjQ5+VPMBuUP4Uf4VAMRF5VVg6QN9LxswUwhO19WKGP21I3JHeESXXu90NSffiY4PnQMfVl4tov03xIY7iknAaCPwX2nRyUV1DkK8lW2tv8Og2jv1EdrP6g4kiXAGq2nigw==5AiLYffpDA0DV7Av::jtbBT03P:9",
+    "href": null,
+    "errs": {
+        "list": []
+    },
+    "perf": [
+        [
+            1,
+            9.0
+        ],
+        [
+            2,
+            40.0
+        ],
+        [
+            3,
+            0.0
+        ]
+    ]
+}

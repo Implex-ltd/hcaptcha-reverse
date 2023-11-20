@@ -133,7 +133,6 @@ dist
 target
 .backup
 *.lnk
-*.json
 *.txt
 *.bat
 all/*

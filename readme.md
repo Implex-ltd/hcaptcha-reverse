@@ -5,9 +5,10 @@ this repo (and more generally all those linked to implex) are the result of coun
 Take the time to look and learn, instead of copying without thinking, because it won't work. If you need a developer, contact me.
 ```
 
-## Hcaptcha 1.40.16 !
+## Hcaptcha update logs !
 
-They added "obfuscation" to the wasm, but hey!
+- `1.40.16` They added "obfuscation" to the wasm, but hey!
+- `1.40.20?` They removed `version` params (*+ fixed rand?*) (now ima count 1.40.X)
 
 ## String integrity check
 
