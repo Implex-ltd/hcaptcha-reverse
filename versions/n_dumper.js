@@ -1,5 +1,6 @@
 /*
     Dump WASM memory and look for N data.
+    - Doesnt' work for versions above 1.40.20 (you have to find memories.xxx var name)
 */
 
 (() => {
@@ -12,7 +13,7 @@
             return
         }
 
-        const u8 = new Uint8Array(memories.$memory.buffer)
+        const u8 = new Uint8Array(memories.$memory.buffer) // as example 1.40.21 would be memories.$Za.buffer
         const buff = new TextDecoder('utf-8').decode(u8)
 
         if (!buff.includes(del_1) && !buff.includes(del_2)) {
