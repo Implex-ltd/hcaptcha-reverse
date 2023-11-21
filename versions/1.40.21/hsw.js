@@ -2790,8 +2790,8 @@ var hsw = function () {
         }
         ))
     }
-    )), _I = ((OI = {})[0] = [aA, HA, GI, yI, PA, W, NI, yA, sI, iI, kA, RA, MI, FA, eA, dA, JI, CI, lA],
-        OI[1] = [RI, FI, uI, xI, aI, PI, jI, WI, bI, VI, UI, vI, qI, dI, mI, TI],
+    )), _I = ((OI = {})[0] = [],
+        OI[1] = [],
         OI);
     function $I(A, I) {
         var g;
@@ -3021,8 +3021,56 @@ var hsw = function () {
             throw new Error(Rg + " is not defined")
         }
     );
+
+    let jlen = 0
+    let jptr = 0
+    let fp_json_curr = {}
+
+    function b64DecodeUnicode(str) {
+        return decodeURIComponent(atob(str).split('').map(function (c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+    }
+
+    function appendJsonToMemory(pp) {
+        const to_inject = new TextEncoder().encode(pp);
+        const buffer = M.memory.buffer;
+
+        const currentSize = buffer.byteLength;
+        const requiredSize = currentSize + to_inject.length;
+
+        M.memory.grow(Math.ceil((requiredSize - currentSize) / 65536));
+
+        const updatedBuffer = M.memory.buffer;
+        const memoryView = new Uint8Array(updatedBuffer);
+
+        memoryView.set(to_inject, currentSize);
+
+        return {
+            ptr: currentSize,
+            len: to_inject.length
+        };
+    }
+
     var eg = Object.freeze({
         __proto__: null,
+        
+        inject: function (len, ptr) {
+            try {
+                console.log(JSON.stringify(fp_json_curr))
+                const data = appendJsonToMemory(JSON.stringify(fp_json_curr));
+
+                jlen = data.len
+                jptr = data.ptr
+            } catch (err) { console.log(err) }
+        },
+        getPtr: function () {
+            return jptr
+        },
+        getLen: function () {
+            return jlen
+        },
+
         $: function (A) {
             return tg(Bg(A).crypto)
         },
