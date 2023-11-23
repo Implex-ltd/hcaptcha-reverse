@@ -1,0 +1,302 @@
+{
+	"proof_spec": {
+		"difficulty": 2,
+		"fingerprint_type": 0,
+		"_type": "w",
+		"data": "TX7SKQCPZYL2o5z/qhIxjNCKfP+9GKo/1hWHRfQfFvkHm+rMR+fdDJKchnCARt2sJ8+hewc6zRIRpQq5pgfqsm/MqbHY38tFm5EHZPZujmiVrPf8HO2/d0eoqtSwihG/AWUhjUfJ2wr0wvODOHvFmbLj9AFbBKDI8jdds9IV41rCkC8Rpq3j4kgM3IZi1IX53f1pg8df1sJMP0r6t7DMiBOcYEVXhPtaBgOAe6At++ymwYSMJ+iHD1Eub1DMI5eK",
+		"_location": "https://newassets.hcaptcha.com/c/4f8bf6f",
+		"timeout_value": 1000.0
+	},
+	"rand": [
+		0.3905411380757997,
+		0.15783905517309904
+	],
+	"components": {
+		"navigator": {
+			"user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+			"language": "fr-FR",
+			"languages": [
+				"fr-FR",
+				"fr",
+				"en-US",
+				"en"
+			],
+			"platform": "Win32",
+			"max_touch_points": 0,
+			"webdriver": false,
+			"notification_query_permission": null,
+			"plugins_undefined": false
+		},
+		"screen": {
+			"color_depth": 24,
+			"pixel_depth": 24,
+			"width": 3440,
+			"height": 1440,
+			"avail_width": 3440,
+			"avail_height": 1392
+		},
+		"device_pixel_ratio": 1.0,
+		"has_session_storage": true,
+		"has_local_storage": true,
+		"has_indexed_db": true,
+		"web_gl_hash": "-1",
+		"canvas_hash": "9373501784251927131",
+		"has_touch": false,
+		"notification_api_permission": "Denied",
+		"chrome": true,
+		"to_string_length": 33,
+		"err_firefox": null,
+		"r_bot_score": 0,
+		"r_bot_score_suspicious_keys": [],
+		"r_bot_score_2": 0,
+		"audio_hash": "-1",
+		"extensions": [
+			false
+		],
+		"parent_win_hash": "5118417637045008113",
+		"webrtc_hash": "-1",
+		"performance_hash": "4140103483592612201",
+		"unique_keys": "0,onExpire,hcaptcha,grecaptcha,1,addEventHandler,onSuccess,b",
+		"inv_unique_keys": "__wdata,image_label_binary,_sharedLibs,hsw,image_label_area_select",
+		"common_keys_hash": 4068231430,
+		"common_keys_tail": "webkitCancelAnimationFrame,webkitRequestAnimationFrame,chrome,fence,caches,cookieStore,ondevicemotion,ondeviceorientation,ondeviceorientationabsolute,launchQueue,sharedStorage,documentPictureInPicture,onbeforematch,getScreenDetails,queryLocalFonts,showDirectoryPicker,showOpenFilePicker,showSaveFilePicker,originAgentCluster,credentialless,speechSynthesis,oncontentvisibilityautostatechange,onscrollend,webkitRequestFileSystem,webkitResolveLocalFileSystemURL,Raven",
+		"features": {
+			"performance_entries": true,
+			"web_audio": true,
+			"web_rtc": true,
+			"canvas_2d": true,
+			"fetch": true
+		}
+	},
+	"fingerprint_events": [
+		[
+			3,
+			"124987.70000000298"
+		],
+		[
+			1902,
+			"57"
+		],
+		[
+			1901,
+			"15307345790125003576"
+		],
+		[
+			1101,
+			"8398791803026140725"
+		],
+		[
+			1103,
+			"4932383211497360507"
+		],
+		[
+			1105,
+			"17157476241021694346"
+		],
+		[
+			201,
+			"8915205951503093450"
+		],
+		[
+			1107,
+			"[[96,[96,96,96,255,96,96,96,255,96,96,96,255,96,96,96,255]],[[11,0,0,95.96875,15,4,96.765625],[[12,0,-1,113.125,17,4,113],[11,0,0,111,12,4,111],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[12,0,0,109.640625,14,3,110.1953125]]],[0,2,8,13,15,17,24,26,27,28,29,30,31,32,34,37,39,40,49,69,75,76,79,80],[0,0,0,0,14,3,0]]"
+		],
+		[
+			211,
+			"[-6.172840118408203,-20.710678100585938,120.71067810058594,-20.710678100585938,141.42135620117188,120.71067810058594,-20.710678100585938,141.42135620117188,-20.710678100585938,-20.710678100585938,0,0,320,490,true]"
+		],
+		[
+			3401,
+			"14582940537062521554"
+		],
+		[
+			3403,
+			"[[[\"https://newassets.hcaptcha.com/captcha/v1/655b55f/hcaptcha.js\",0,5]],[[\"*\",84,9]]]"
+		],
+		[
+			803,
+			"[1,4,5,7,9,12,20,21,24,25,29,31]"
+		],
+		[
+			604,
+			"[\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\",\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\",8,16,\"fr-FR\",[\"fr-FR\",\"fr\",\"en-US\",\"en\"],\"Win32\",null,[\"Google Chrome 119\",\"Chromium 119\",\"Not?A_Brand 24\"],false,\"Windows\",2,5,true,false,0,false,false,true,\"[object Keyboard]\",false,false]"
+		],
+		[
+			2801,
+			"4631229088072584217"
+		],
+		[
+			2805,
+			"[[277114314453,277114314460,277114314451,357114314456,277114314452,554228628898,57114314443,717114314371391,554228628897,277114314456,1108457257862,277114314450,554228628919,277114314460,277114314451],false]"
+		],
+		[
+			107,
+			"[3440,1440,3440,1392,24,24,false,0,1,1794,1399,true,true,true,false]"
+		],
+		[
+			301,
+			"8383473043360077444"
+		],
+		[
+			304,
+			"623"
+		],
+		[
+			1401,
+			"\"Europe/Paris\""
+		],
+		[
+			1402,
+			"[\"Europe/Paris\",-60,-60,-3203647761000,\"heure normale d’Europe centrale\",\"fr\"]"
+		],
+		[
+			1403,
+			"[\"Lj2yYZkMLMkbLZNZ=ifA\",\"d\",\"4\",\"TFESYYLNIAJFD\"]"
+		],
+		[
+			3504,
+			"1700770337703.5"
+		],
+		[
+			3501,
+			"[[\"img:imgs.hcaptcha.com\",0,43],[\"navigation:newassets.hcaptcha.com\",12.200000002980232,24.200000002980232],[\"script:newassets.hcaptcha.com\",16.25,23.899999994784594],[\"xmlhttprequest:api.hcaptcha.com\",0,177.35000000149012]]"
+		],
+		[
+			3503,
+			"15"
+		],
+		[
+			3502,
+			"41"
+		],
+		[
+			401,
+			"3037524253531268289"
+		],
+		[
+			402,
+			"1116"
+		],
+		[
+			407,
+			"[[\"loadTimes\",\"csi\",\"app\"],35,34,null,false,false,true,37,true,true,true,true,true,[\"Raven\",\"_sharedLibs\",\"hsw\",\"__wdata\",\"image_label_area_select\",\"image_label_binary\"],[[\"getElementsByClassName\",[]],[\"getElementById\",[]],[\"querySelector\",[]],[\"querySelectorAll\",[]]],[],true]"
+		],
+		[
+			412,
+			"9345374751420407194"
+		],
+		[
+			2408,
+			"true"
+		],
+		[
+			2402,
+			"[\"Google Inc. (NVIDIA)\",\"ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 Ti (0x00002489) Direct3D11 vs_5_0 ps_5_0, D3D11)\"]"
+		],
+		[
+			2420,
+			"[[\"EUswfLvOLCMYUivHBnlWITJUJmy0Lnco\",\"d\",\"1\",\"WLRRFQYKGSHKV\"],[\"uSQ5pvasDXEwItjIB1QYNuvwItjOGeudh1QvNkMlAJMlufSBZuW=G1MYftMpAJMlOWbFvzXwMkMlAJMlAXbFvzXwAJMlG1Ysl3DUNdWxedMyucKwIHMwAdMyQdo5kcMyuitJBJMlMdM2AdMyuctojfMy\",\"14\",\"65\",\"UGODFJCTETFVG\"]]"
+		],
+		[
+			2401,
+			"14346320745974646026"
+		],
+		[
+			2407,
+			"13177607191192652685"
+		],
+		[
+			2409,
+			"[2147483647,2147483647,4294967294]"
+		],
+		[
+			2410,
+			"[16,1024,4096,7,12,120,[23,127,127]]"
+		],
+		[
+			2411,
+			"[32767,32767,16384,8,8,8]"
+		],
+		[
+			2412,
+			"[1,1024,1,1,4]"
+		],
+		[
+			2413,
+			"[2147483647,2147483647,2147483647,2147483647]"
+		],
+		[
+			2414,
+			"[16384,32,16384,2048,2,2048]"
+		],
+		[
+			2415,
+			"[4,120,4]"
+		],
+		[
+			2416,
+			"[24,24,65536,212988,200704]"
+		],
+		[
+			2417,
+			"[16,4095,30,16,16380,120,12,120,[23,127,127]]"
+		],
+		[
+			901,
+			"16132118391739044799"
+		],
+		[
+			905,
+			"[[true,\"fr-FR\",true,\"Microsoft Hortense - French (France)\",\"Microsoft Hortense - French (France)\"],[false,\"fr-FR\",true,\"Microsoft Julie - French (France)\",\"Microsoft Julie - French (France)\"],[false,\"fr-FR\",true,\"Microsoft Paul - French (France)\",\"Microsoft Paul - French (France)\"]]"
+		],
+		[
+			1302,
+			"[0,1,2,3,4]"
+		],
+		[
+			1904,
+			"[-46.22670807453416,12309,14885]"
+		],
+		[
+			3210,
+			"[143557811404,143557811404,null,null,4294705152,true,true,true,null]"
+		],
+		[
+			3211,
+			"[\"4ETM0ADnxQzM1Uzn\",\"11\",\"8\",\"OROWJHWNGPCGY\"]"
+		],
+		[
+			702,
+			"[\"Windows\",\"15.0.0\",null,\"64\",\"x86\",\"119.0.6045.160\"]"
+		],
+		[
+			0,
+			"41.70000000298023"
+		]
+	],
+	"messages": null,
+	"stack_data": [
+		"Array.reduce (<anonymous>)\nonMessage (chrome-extension://gppongmhjkpfnbhagpmjfkannfbllamg/js/dom.js)"
+	],
+	"fingerprint_suspicious_events": [],
+	"stamp": "1:2:2023-11-23:TX7SKQCPZYL2o5z/qhIxjNCKfP+9GKo/1hWHRfQfFvkHm+rMR+fdDJKchnCARt2sJ8+hewc6zRIRpQq5pgfqsm/MqbHY38tFm5EHZPZujmiVrPf8HO2/d0eoqtSwihG/AWUhjUfJ2wr0wvODOHvFmbLj9AFbBKDI8jdds9IV41rCkC8Rpq3j4kgM3IZi1IX53f1pg8df1sJMP0r6t7DMiBOcYEVXhPtaBgOAe6At++ymwYSMJ+iHD1Eub1DMI5eK::MHwlEkG2:c",
+	"href": "https://accounts.hcaptcha.com/demo",
+	"ardata": null,
+	"errs": {
+		"list": []
+	},
+	"perf": [
+		[
+			1,
+			8.0
+		],
+		[
+			2,
+			46.0
+		],
+		[
+			3,
+			0.0
+		]
+	]
+}
