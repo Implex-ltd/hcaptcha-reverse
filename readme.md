@@ -11,6 +11,7 @@ Take the time to look and learn, instead of copying without thinking, because it
 - `1.40.20?` They removed `version` params (*+ fixed rand?*) (now ima count 1.40.X)
 - `1.40.21` They renamed wasm bindgen binding name !!
 - `1.40.22` new param `ardata`
+- `1.40.23` dynamic numbers for `finqgerprint_events` + fix `ardata` always null
 
 ## String integrity check
 

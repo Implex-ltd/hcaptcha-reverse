@@ -1,0 +1,302 @@
+{
+	"proof_spec": {
+		"difficulty": 2,
+		"fingerprint_type": 0,
+		"_type": "w",
+		"data": "6Blp90Zhup2fxLiMGK0CAZ+dYBjJ9VtRTMpaZ0ZmgyBZg6fQb655vnKPbRrTrIDIS1ShRAkmYsJxhjYKgVa0o5u9oXkYQNblbPwDQCkphSuLwBc1NSWPkwgR/lJoQJPjO4ZMrcDmdXRACua88bM894S6UkuXvJp0MJoT/h5jQ9jK5C/rx9wO0rtYxl4tBWMLZ0FNTpZamGwOW0g/fVSl3q9qpo9CUI/8DHdbJ9U5cLopgjrmn2dj3FOP50BB/H1Y",
+		"_location": "https://newassets.hcaptcha.com/c/ac578c1",
+		"timeout_value": 1000.0
+	},
+	"rand": [
+		0.7512882412760207,
+		0.8927777726203203
+	],
+	"components": {
+		"navigator": {
+			"user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+			"language": "fr-FR",
+			"languages": [
+				"fr-FR",
+				"fr",
+				"en-US",
+				"en"
+			],
+			"platform": "Win32",
+			"max_touch_points": 0,
+			"webdriver": false,
+			"notification_query_permission": null,
+			"plugins_undefined": false
+		},
+		"screen": {
+			"color_depth": 24,
+			"pixel_depth": 24,
+			"width": 3440,
+			"height": 1440,
+			"avail_width": 3440,
+			"avail_height": 1392
+		},
+		"device_pixel_ratio": 1.0,
+		"has_session_storage": true,
+		"has_local_storage": true,
+		"has_indexed_db": true,
+		"web_gl_hash": "-1",
+		"canvas_hash": "9373501784251927131",
+		"has_touch": false,
+		"notification_api_permission": "Denied",
+		"chrome": true,
+		"to_string_length": 33,
+		"err_firefox": null,
+		"r_bot_score": 0,
+		"r_bot_score_suspicious_keys": [],
+		"r_bot_score_2": 0,
+		"audio_hash": "-1",
+		"extensions": [
+			false
+		],
+		"parent_win_hash": "5118417637045008113",
+		"webrtc_hash": "-1",
+		"performance_hash": "4140103483592612201",
+		"unique_keys": "onExpire,1,grecaptcha,onSuccess,b,hcaptcha,0,addEventHandler",
+		"inv_unique_keys": "__wdata,image_label_area_select,hsw,image_label_binary,_sharedLibs",
+		"common_keys_hash": 4068231430,
+		"common_keys_tail": "webkitCancelAnimationFrame,webkitRequestAnimationFrame,chrome,fence,caches,cookieStore,ondevicemotion,ondeviceorientation,ondeviceorientationabsolute,launchQueue,sharedStorage,documentPictureInPicture,onbeforematch,getScreenDetails,queryLocalFonts,showDirectoryPicker,showOpenFilePicker,showSaveFilePicker,originAgentCluster,credentialless,speechSynthesis,oncontentvisibilityautostatechange,onscrollend,webkitRequestFileSystem,webkitResolveLocalFileSystemURL,Raven",
+		"features": {
+			"performance_entries": true,
+			"web_audio": true,
+			"web_rtc": true,
+			"canvas_2d": true,
+			"fetch": true
+		}
+	},
+	"events": [
+		[
+			3466531960,
+			"262291.80000000005"
+		],
+		[
+			1863443085,
+			"57"
+		],
+		[
+			3372539199,
+			"15307345790125003576"
+		],
+		[
+			606858957,
+			"8398791803026140725"
+		],
+		[
+			2189390885,
+			"4932383211497360507"
+		],
+		[
+			1452203497,
+			"17157476241021694346"
+		],
+		[
+			3495851717,
+			"8915205951503093450"
+		],
+		[
+			3906238047,
+			"[[202,[202,202,202,255,202,202,202,255,202,202,202,255,202,202,202,255]],[[11,0,0,95.96875,15,4,96.765625],[[12,0,-1,113.125,17,4,113],[11,0,0,111,12,4,111],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[12,0,0,109.640625,14,3,110.1953125]]],[0,2,8,13,15,17,24,26,27,28,29,30,31,32,34,37,39,40,49,69,75,76,79,80],[0,0,0,0,14,3,0]]"
+		],
+		[
+			581816250,
+			"[-6.172840118408203,-20.710678100585938,120.71067810058594,-20.710678100585938,141.42135620117188,120.71067810058594,-20.710678100585938,141.42135620117188,-20.710678100585938,-20.710678100585938,0,0,300,374,false]"
+		],
+		[
+			2201408531,
+			"6049865059362839187"
+		],
+		[
+			1975197898,
+			"[[[\"https://newassets.hcaptcha.com/captcha/v1/4c66d17/hcaptcha.js\",0,5]],[[\"*\",84,9]]]"
+		],
+		[
+			3927421225,
+			"[1,4,5,7,9,12,20,21,24,25,29,31]"
+		],
+		[
+			953237450,
+			"[\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\",\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\",8,16,\"fr-FR\",[\"fr-FR\",\"fr\",\"en-US\",\"en\"],\"Win32\",null,[\"Google Chrome 119\",\"Chromium 119\",\"Not?A_Brand 24\"],false,\"Windows\",2,5,true,false,0,false,false,true,\"[object Keyboard]\",false,false]"
+		],
+		[
+			516433880,
+			"4631229088072584217"
+		],
+		[
+			2559263457,
+			"[[277114314453,277114314460,277114314451,357114314456,277114314452,554228628898,57114314443,717114314371391,554228628897,277114314456,1108457257862,277114314450,554228628919,277114314460,277114314451],false]"
+		],
+		[
+			3129156974,
+			"[3440,1440,3440,1392,24,24,false,0,1,1948,1399,true,true,true,false]"
+		],
+		[
+			1441418275,
+			"8383473043360077444"
+		],
+		[
+			220156798,
+			"623"
+		],
+		[
+			1477016717,
+			"\"Europe/Paris\""
+		],
+		[
+			632972051,
+			"[\"Europe/Paris\",-60,-60,-3203647761000,\"heure normale d’Europe centrale\",\"fr\"]"
+		],
+		[
+			1249745778,
+			"[\"LI1Y0Twd=c0d0FncnzKM\",\"2\",\"c\",\"ZSBWLXEVVOKST\"]"
+		],
+		[
+			1559740887,
+			"1701263012763.3"
+		],
+		[
+			1717946310,
+			"[[\"img:imgs.hcaptcha.com\",0,53.300000000046566],[\"navigation:newassets.hcaptcha.com\",14.099999999860302,25.300000000046566],[\"script:newassets.hcaptcha.com\",19.849999999976717,28.349999999976717],[\"xmlhttprequest:api.hcaptcha.com\",0,195.80000000004657]]"
+		],
+		[
+			1834973505,
+			"15"
+		],
+		[
+			4097889158,
+			"47"
+		],
+		[
+			2366458750,
+			"3037524253531268289"
+		],
+		[
+			3842046382,
+			"1116"
+		],
+		[
+			1252738885,
+			"[[\"loadTimes\",\"csi\",\"app\"],35,34,null,false,false,true,37,true,true,true,true,true,[\"Raven\",\"_sharedLibs\",\"hsw\",\"__wdata\",\"image_label_binary\",\"image_label_area_select\"],[[\"getElementsByClassName\",[]],[\"getElementById\",[]],[\"querySelector\",[]],[\"querySelectorAll\",[]]],[],true]"
+		],
+		[
+			432558238,
+			"9345374751420407194"
+		],
+		[
+			1554833176,
+			"true"
+		],
+		[
+			205531271,
+			"[\"Google Inc. (NVIDIA)\",\"ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 Ti (0x00002489) Direct3D11 vs_5_0 ps_5_0, D3D11)\"]"
+		],
+		[
+			3749711575,
+			"[[\"CmyUyqODnLwItJblWahZWeOgEUdh1qVl\",\"14\",\"a\",\"KROBXQQRMTBBD\"],[\"jmL0KCh5GbjNTTXEdmyUckWCGmWadmyQdo5KcmyUyQyBjmLmdm2admyUsQdDEmyUcUu9EehXMbWITJxVKUNJLsWITJOCVRs1KUkNKmLajmLO0VQVLT=00mNFTmPajmLKnYfVzxWmKmLajmLUMYfVzxWa\",\"9\",\"26\",\"LDCMSWOXAXPKM\"]]"
+		],
+		[
+			2715483163,
+			"14346320745974646026"
+		],
+		[
+			334318367,
+			"13177607191192652685"
+		],
+		[
+			3853511658,
+			"[2147483647,2147483647,4294967294]"
+		],
+		[
+			602701828,
+			"[16,1024,4096,7,12,120,[23,127,127]]"
+		],
+		[
+			2551699649,
+			"[32767,32767,16384,8,8,8]"
+		],
+		[
+			1138725470,
+			"[1,1024,1,1,4]"
+		],
+		[
+			2114559531,
+			"[2147483647,2147483647,2147483647,2147483647]"
+		],
+		[
+			305390745,
+			"[16384,32,16384,2048,2,2048]"
+		],
+		[
+			1550643285,
+			"[4,120,4]"
+		],
+		[
+			1000976461,
+			"[24,24,65536,212988,200704]"
+		],
+		[
+			915302928,
+			"[16,4095,30,16,16380,120,12,120,[23,127,127]]"
+		],
+		[
+			2580073715,
+			"16132118391739044799"
+		],
+		[
+			3038760969,
+			"[[true,\"fr-FR\",true,\"Microsoft Hortense - French (France)\",\"Microsoft Hortense - French (France)\"],[false,\"fr-FR\",true,\"Microsoft Julie - French (France)\",\"Microsoft Julie - French (France)\"],[false,\"fr-FR\",true,\"Microsoft Paul - French (France)\",\"Microsoft Paul - French (France)\"]]"
+		],
+		[
+			982108554,
+			"[0,1,2,3,4]"
+		],
+		[
+			768661242,
+			"[0,10457,10457]"
+		],
+		[
+			653250421,
+			"[143557811404,143557811404,null,null,4294705152,true,true,true,null]"
+		],
+		[
+			43593802,
+			"[\"0ADnxqzM1uzn4EtM\",\"f\",\"c\",\"NYQSUOIVKTQLS\"]"
+		],
+		[
+			2291881338,
+			"[\"Windows\",\"15.0.0\",null,\"64\",\"x86\",\"119.0.6045.199\"]"
+		],
+		[
+			579870943,
+			"34"
+		]
+	],
+	"suspicious_events": [],
+	"messages": null,
+	"stack_data": [
+		"Array.reduce (<anonymous>)\nonMessage (chrome-extension://gppongmhjkpfnbhagpmjfkannfbllamg/js/dom.js)"
+	],
+	"stamp": "1:2:2023-11-29:6Blp90Zhup2fxLiMGK0CAZ+dYBjJ9VtRTMpaZ0ZmgyBZg6fQb655vnKPbRrTrIDIS1ShRAkmYsJxhjYKgVa0o5u9oXkYQNblbPwDQCkphSuLwBc1NSWPkwgR/lJoQJPjO4ZMrcDmdXRACua88bM894S6UkuXvJp0MJoT/h5jQ9jK5C/rx9wO0rtYxl4tBWMLZ0FNTpZamGwOW0g/fVSl3q9qpo9CUI/8DHdbJ9U5cLopgjrmn2dj3FOP50BB/H1Y::Hnrezuy2:b",
+	"href": "https://accounts.hcaptcha.com/demo",
+	"ardata": "xvXl6U/IVXtTEJfpbPpNtMC8xnEio2wguSNlHxuu6ceGQG/Mq4XrEWXH0OfGn1QYOJiMTWcuyu02CgsJyDo2H7uqd0i0uf01OxDWMJpmyhustl3+EQ==yTJUW4TR2N0CfJSA",
+	"errs": {
+		"list": []
+	},
+	"perf": [
+		[
+			1,
+			7.0
+		],
+		[
+			2,
+			38.0
+		],
+		[
+			3,
+			0.0
+		]
+	]
+}
