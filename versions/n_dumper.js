@@ -13,7 +13,7 @@
             return
         }
 
-        const u8 = new Uint8Array(memories.$memory.buffer) // as example 1.40.21 would be memories.$Za.buffer
+        const u8 = new Uint8Array(memories.$memory.buffer) // as example 1.40.24 would be memories.$_a.buffer
         const buff = new TextDecoder('utf-8').decode(u8)
 
         if (!buff.includes(del_1) && !buff.includes(del_2)) {

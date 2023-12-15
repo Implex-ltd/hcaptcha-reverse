@@ -1,6 +1,7 @@
 
 /**
  * Dump all memory chunk 32 by 32 bits and retrieve string that start by "c" or "C" (first char of encryption-key)
+ * ps: won't work.
  */
 
 (() => {
