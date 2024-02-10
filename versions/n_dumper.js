@@ -8,12 +8,12 @@
     const del_2 = `]]}`
 
     function dump() {
-        if (memories.$memory.buffer === undefined) {
+        if (memories.$$a.buffer === undefined) {
             console.log("Buffer not found, Please execute while HSW is running.")
             return
         }
 
-        const u8 = new Uint8Array(memories.$memory.buffer) // as example 1.40.24 would be memories.$_a.buffer
+        const u8 = new Uint8Array(memories.$$a.buffer) // as example 1.40.21 would be memories.$Za.buffer
         const buff = new TextDecoder('utf-8').decode(u8)
 
         if (!buff.includes(del_1) && !buff.includes(del_2)) {
