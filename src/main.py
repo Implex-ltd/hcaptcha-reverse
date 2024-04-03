@@ -1,6 +1,6 @@
 import os, base64
 
-__version__ = "1.40.32"
+__version__ = "1.40.33"
 
 class CustomWASM:
     def __init__(self, stub_path: str) -> None:
