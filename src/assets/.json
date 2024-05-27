@@ -1,0 +1,323 @@
+{
+    "proof_spec": {
+        "difficulty": 2,
+        "fingerprint_type": 0,
+        "_type": "w",
+        "data": "iTTEPIRisFUOwF/kbfucZ9Eqcrzy3Bgh23V3SAHzBXxoB1bv6BLnO9tYAN+/vXUH8VH36vCw+GxoLCPFa1xpJSzn729imxn2/Qa9jON6zAWg94kE9D2A/w/l3pgWtwsl3pAJ60vi7A98JBvg1BO8nFY0D/w5/OMhCIsgjysn9HFrdvkH8LULwiIBljU7jeqIPsfvDkRuxueKCh42zUTatdUJH0XRO/aFobVPS7snNnKNS4Eilr8=xiPe3M/2VnfvU9gT",
+        "_location": "https://newassets.hcaptcha.com/c/de80b1b",
+        "timeout_value": 1000.0
+    },
+    "rand": [
+        0.13136855839813455
+    ],
+    "components": {
+        "navigator": {
+            "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+            "language": "fr-FR",
+            "languages": [
+                "fr-FR",
+                "fr",
+                "en-US",
+                "en"
+            ],
+            "platform": "Win32",
+            "max_touch_points": 0,
+            "webdriver": false,
+            "notification_query_permission": null,
+            "plugins_undefined": false
+        },
+        "screen": {
+            "color_depth": 24,
+            "pixel_depth": 24,
+            "width": 3440,
+            "height": 1440,
+            "avail_width": 3440,
+            "avail_height": 1392
+        },
+        "device_pixel_ratio": 1.0,
+        "has_session_storage": true,
+        "has_local_storage": true,
+        "has_indexed_db": true,
+        "web_gl_hash": "-1",
+        "canvas_hash": "9373501784251927131",
+        "has_touch": false,
+        "notification_api_permission": "Denied",
+        "chrome": true,
+        "to_string_length": 33,
+        "err_firefox": null,
+        "r_bot_score": 0,
+        "r_bot_score_suspicious_keys": [],
+        "r_bot_score_2": 0,
+        "audio_hash": "-1",
+        "extensions": [
+            false
+        ],
+        "parent_win_hash": "4106842411311888481",
+        "webrtc_hash": "-1",
+        "performance_hash": "4140103483592612201",
+        "unique_keys": "0,hcaptcha,onSuccess,unisat,grecaptcha,1,onExpire",
+        "inv_unique_keys": "hsw,image_label_binary,__wdata,_sharedLibs",
+        "common_keys_hash": 2504603971,
+        "common_keys_tail": "stop,structuredClone,webkitCancelAnimationFrame,webkitRequestAnimationFrame,chrome,fence,caches,cookieStore,ondevicemotion,ondeviceorientation,ondeviceorientationabsolute,launchQueue,sharedStorage,documentPictureInPicture,getScreenDetails,queryLocalFonts,showDirectoryPicker,showOpenFilePicker,showSaveFilePicker,originAgentCluster,onpageswap,onpagereveal,credentialless,speechSynthesis,onscrollend,webkitRequestFileSystem,webkitResolveLocalFileSystemURL,providers,_phantomHideProvidersArray,_phantomShowMetamaskExplainer,isPhantomInstalled,regeneratorRuntime,define,_global,_sentryDebugIds,_sentryDebugIdIdentifier,SENTRY_RELEASE,webpackChunk_rise_wallet_solflare_extension,solflare,Raven,solflareWalletStandardInitialized",
+        "features": {
+            "performance_entries": true,
+            "web_audio": true,
+            "web_rtc": true,
+            "canvas_2d": true,
+            "fetch": true
+        }
+    },
+    "events": [
+        [
+            1031696114,
+            "[1,1024,1,1,4]"
+        ],
+        [
+            3837888977,
+            "[2147483647,2147483647,2147483647,2147483647]"
+        ],
+        [
+            67516181,
+            "[0,1,2,3,4]"
+        ],
+        [
+            1791986573,
+            "17157476241021694346"
+        ],
+        [
+            2758849376,
+            "12027682292028963860"
+        ],
+        [
+            1739511171,
+            "[[true,\"fr-FR\",true,\"Microsoft Hortense - French (France)\",\"Microsoft Hortense - French (France)\"],[false,\"en-US\",true,\"Microsoft Mark - English (United States)\",\"Microsoft Mark - English (United States)\"],[false,\"en-US\",true,\"Microsoft Zira - English (United States)\",\"Microsoft Zira - English (United States)\"]]"
+        ],
+        [
+            304009087,
+            "[0,10465,10465]"
+        ],
+        [
+            1827241937,
+            "[16,1024,4096,7,12,120,[23,127,127]]"
+        ],
+        [
+            254857823,
+            "[24,24,65536,212988,200704]"
+        ],
+        [
+            1248513529,
+            "4373434.5"
+        ],
+        [
+            1481601550,
+            "15307345790125003576"
+        ],
+        [
+            312358085,
+            "[2147483647,2147483647,4294967294]"
+        ],
+        [
+            1340581728,
+            "43.200000047683716"
+        ],
+        [
+            2132158760,
+            "[[[\"https://newassets.hcaptcha.com/captcha/v1/3922dfd/hcaptcha.js\",0,5]],[[\"*\",84,9]]]"
+        ],
+        [
+            3225703681,
+            "8915205951503093450"
+        ],
+        [
+            2489756571,
+            "0.25"
+        ],
+        [
+            1004633796,
+            "[\"Google Inc. (NVIDIA)\",\"ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 Ti (0x00002489) Direct3D11 vs_5_0 ps_5_0, D3D11)\"]"
+        ],
+        [
+            1003038916,
+            "639"
+        ],
+        [
+            938239901,
+            "[[\"loadTimes\",\"csi\",\"app\"],35,34,null,false,false,true,37,true,true,true,true,true,[\"providers\",\"_phantomHideProvidersArray\",\"_phantomShowMetamaskExplainer\",\"isPhantomInstalled\",\"regeneratorRuntime\",\"define\",\"_global\",\"_sentryDebugIds\",\"_sentryDebugIdIdentifier\",\"SENTRY_RELEASE\",\"webpackChunk_rise_wallet_solflare_extension\",\"solflare\",\"Raven\",\"_sharedLibs\",\"solflareWalletStandardInitialized\",\"hsw\",\"__wdata\",\"image_label_binary\",\"ethereum\",\"phantom\",\"solana\",\"web3\"],[[\"getElementsByClassName\",[]],[\"getElementById\",[]],[\"querySelector\",[]],[\"querySelectorAll\",[]]],[],true]"
+        ],
+        [
+            4066678044,
+            "7215944366357533574"
+        ],
+        [
+            3124014409,
+            "[4,120,4]"
+        ],
+        [
+            3838545372,
+            "57"
+        ],
+        [
+            3569888996,
+            "[143526983270,143526983270,null,null,4294705152,true,true,true,null]"
+        ],
+        [
+            2092456731,
+            "[\"Windows\",\"15.0.0\",null,\"64\",\"x86\",\"125.0.6422.78\"]"
+        ],
+        [
+            1607176087,
+            "8398791803026140725"
+        ],
+        [
+            1938239965,
+            "9345374751420407194"
+        ],
+        [
+            1303365628,
+            "1146"
+        ],
+        [
+            2809130260,
+            "[\"ZKML0EevZgC=IKCvXWbi\",\"17\",\"9\",\"GCLHNCLSKXUDK\"]"
+        ],
+        [
+            382530556,
+            "[\"5gZmycDmXqZm1ijN\",\"2\",\"8\",\"OQMQZEEZVKXIZ\"]"
+        ],
+        [
+            22109551,
+            "[[277114314453,277114314460,277114314451,357114314456,277114314452,554228628898,57114314443,717114314371391,554228628897,277114314456,1108457257862,277114314450,554228628919,277114314460,277114314451],false]"
+        ],
+        [
+            527778036,
+            "14915600074376207368"
+        ],
+        [
+            3869232296,
+            "[12]"
+        ],
+        [
+            2826985353,
+            "[\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36\",\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36\",8,16,\"fr-FR\",[\"fr-FR\",\"fr\",\"en-US\",\"en\"],\"Win32\",null,[\"Google Chrome 125\",\"Chromium 125\",\"Not.A/Brand 24\"],false,\"Windows\",2,5,true,false,0,false,false,true,\"[object Keyboard]\",false,false]"
+        ],
+        [
+            1303333220,
+            "[[\"znLwitJahga6vgeOc0tCDlQulCMYuIQn\",\"13\",\"11\",\"BZTYOIGVUTZDG\"],[\"meUj50R=y0mgFTmpAJmlIXDfVZXWmkmlAJmlGXDfVZXWAJmly0a0Dwz2NJRxedmYUcKWoHmWAdmYQdO5kcmYUiVrbJmlmdm2AdmYUcVwpFmYUssnhUC0V2zWITjQh1sgt0QWITjoAFwLz0sdNkmlAJml\",\"2\",\"91\",\"SBWGDJMZMYEDC\"]]"
+        ],
+        [
+            1295957164,
+            "[-6.172840118408203,-20.710678100585938,120.71067810058594,-20.710678100585938,141.42135620117188,120.71067810058594,-20.710678100585938,141.42135620117188,-20.710678100585938,-20.710678100585938,0,0,400,600,false]"
+        ],
+        [
+            1287155446,
+            "48.10000002384186"
+        ],
+        [
+            3339831915,
+            "[\"Europe/Paris\",-60,-60,-3203647761000,\"heure normale d’Europe centrale\",\"fr\"]"
+        ],
+        [
+            803029788,
+            "[3440,1440,3440,1392,24,24,false,0,1,2203,1399,true,true,true,false]"
+        ],
+        [
+            553070510,
+            "[32767,32767,16384,8,8,8]"
+        ],
+        [
+            925727266,
+            "4932383211497360507"
+        ],
+        [
+            978353121,
+            "true"
+        ],
+        [
+            1514173249,
+            "4631229088072584217"
+        ],
+        [
+            3978583396,
+            "18436767157329878575"
+        ],
+        [
+            227790277,
+            "[16,4095,30,16,16380,120,12,120,[23,127,127]]"
+        ],
+        [
+            2444897354,
+            "\"Europe/Paris\""
+        ],
+        [
+            200401693,
+            "6049865059362839187"
+        ],
+        [
+            2882164405,
+            "[16384,32,16384,2048,2,2048]"
+        ],
+        [
+            506452458,
+            "[[\"img:imgs3.hcaptcha.com\",0,47.19999998807907],[\"navigation:newassets.hcaptcha.com\",0.3999999761581421,4.100000023841858],[\"script:newassets.hcaptcha.com\",0.10000002384185791,4.599999904632568],[\"xmlhttprequest:api.hcaptcha.com\",0,197.80000007152557]]"
+        ],
+        [
+            1893274106,
+            "13177607191192652685"
+        ],
+        [
+            3142658631,
+            "15231299798571605604"
+        ],
+        [
+            1022788021,
+            "1716543353245.1"
+        ],
+        [
+            962453388,
+            "[1,4,5,7,9,12,20,21,24,25,29,31]"
+        ],
+        [
+            1204159645,
+            "[[28,[28,28,28,255,28,28,28,255,28,28,28,255,28,28,28,255]],[[11,0,0,95.96875,15,4,96.765625],[[12,0,-1,113.125,17,4,113],[11,0,0,111,12,4,111],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[11,0,0,95.96875,15,4,96.765625],[12,0,0,109.640625,14,3,110.1953125]]],[0,2,8,13,15,17,24,26,27,28,29,30,31,32,34,37,39,40,49,69,75,76,79,80],[0,0,0,0,14,3,0]]"
+        ]
+    ],
+    "suspicious_events": [],
+    "messages": [
+        [
+            "https://newassets.hcaptcha.com",
+            [
+                "{\"target\":\"metamask-inpage\",\"dat",
+                "{\"target\":\"metamask-contentscrip",
+                "{\"target\":\"metamask-inpage\",\"dat",
+                "{\"target\":\"metamask-contentscrip",
+                "{\"target\":\"metamask-inpage\",\"dat",
+                "{\"target\":\"metamask-inpage\",\"dat"
+            ]
+        ]
+    ],
+    "stack_data": [
+        "r.sendSiteMetadata (<anonymous>)\ne (<anonymous>)",
+        "e (chrome-extension://ppbibelpcjmhbdihakflkdcoccbgbkpo/pageProvider.js)\nchrome-extension://ppbibelpcjmhbdihakflkdcoccbgbkpo/pageProvider.js",
+        "Array.reduce (<anonymous>)\nonMessage (chrome-extension://gppongmhjkpfnbhagpmjfkannfbllamg/js/dom.js)"
+    ],
+    "stamp": "1:2:2024-05-24:iTTEPIRisFUOwF/kbfucZ9Eqcrzy3Bgh23V3SAHzBXxoB1bv6BLnO9tYAN+/vXUH8VH36vCw+GxoLCPFa1xpJSzn729imxn2/Qa9jON6zAWg94kE9D2A/w/l3pgWtwsl3pAJ60vi7A98JBvg1BO8nFY0D/w5/OMhCIsgjysn9HFrdvkH8LULwiIBljU7jeqIPsfvDkRuxueKCh42zUTatdUJH0XRO/aFobVPS7snNnKNS4Eilr8=xiPe3M/2VnfvU9gT::WopjEfLG:7",
+    "href": "https://accounts.hcaptcha.com/demo",
+    "ardata": null,
+    "errs": {
+        "list": []
+    },
+    "perf": [
+        [
+            1,
+            8.0
+        ],
+        [
+            2,
+            47.0
+        ],
+        [
+            3,
+            0.0
+        ]
+    ]
+}
