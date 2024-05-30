@@ -5,6 +5,10 @@ this repo (and more generally all those linked to implex) are the result of coun
 Take the time to look and learn, instead of copying without thinking, because it won't work. If you need a developer, contact me.
 ```
 
+```
+⚠️ PS: I see more and more people copying/stealing this script and reuploading it without credit on github, that's why I'm posting an update, be careful who you pay services to, especially towards those people who are just thieves and don't know how to do anything on their own.
+```
+
 ## Hcaptcha update logs !
 
 - `1.40.16` They added "obfuscation" to the wasm, but hey!
@@ -13,6 +17,7 @@ Take the time to look and learn, instead of copying without thinking, because it
 - `1.40.22` new param `ardata`
 - `1.40.23` dynamic numbers for `fingerprint_events` + fix `ardata` always null
 - `1.40.25` `fingerprint_events` order change ??
+- `1.60.0` New VM
 
 ## String integrity check
 
