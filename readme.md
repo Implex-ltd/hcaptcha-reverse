@@ -7,6 +7,8 @@ Take the time to look and learn, instead of copying without thinking, because it
 
 ```
 ⚠️ PS: I see more and more people copying/stealing this script and reuploading it without credit on github, that's why I'm posting an update, be careful who you pay services to, especially towards those people who are just thieves and don't know how to do anything on their own.
+
+dont interact with Cyrus, he is a known scammer and scammed many ppl via hcaptcha related stuff. thanks
 ```
 
 ## Hcaptcha update logs !
@@ -308,9 +310,3 @@ the algorithm uses an LCG with the following parameters:
 - multiplier: 6364136223846793005
 - increment: different based on `key_factor1` and `operator`
 - modulus: 2^64
-
-## Notes (from Cyrus)
-
-- This community is a shitty community filled with arrogant people *ehm ehm dort* who can't take anything seriously
-- This is going to be the last time you are seeing me, good luck to everyone who is on this path (The VM is pretty fun). 
-- If you urgently need me contact me (Cyrus) at telegram: @hcaptcha_staff
